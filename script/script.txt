@@ -1,0 +1,1 @@
+file javascript sẽ nằm trong thư mục này
