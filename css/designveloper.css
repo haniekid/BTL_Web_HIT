@@ -1,0 +1,234 @@
+/* ---------------basic css starts--------------- */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+:root {
+  --yellow-color: #faba0a;
+  --orange-color: #ff6900;
+  --black-color: #000000;
+  --gray-color: #abb8c3;
+  --white-color: #ffffff;
+  --border-radius: 0 0 16px;
+  --btn-hover: #fcce46;
+
+  --background-color: #373e44;
+  /* --background-color: #212529; */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  font-family: "Maven Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section,
+.section {
+  padding: 2rem 9%;
+  background-color: var(--background-color);
+}
+
+.bounce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14.5rem;
+  animation: bounce infinite 2s linear;
+  cursor: pointer;
+}
+
+.bounce p,
+.bounce i {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 400;
+}
+
+.bounce i {
+  color: var(--yellow-color);
+  font-size: 2.5rem;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+/* basic css ends */
+
+/* ---------------header section starts--------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-weight: 500;
+  /* opacity: 0.95; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 100vw;
+  background-color: #abb8c3;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header .logo-img {
+  height: 100%;
+} */
+
+header nav a {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: var(--white-color);
+  /* color: #ffffff; */
+}
+
+header nav a:hover {
+  background-color: var(--btn-hover);
+}
+
+header nav a.btn-estimate {
+  padding: 1.7rem;
+  background-color: var(--yellow-color);
+  border-radius: var(--border-radius);
+}
+
+header nav a.btn-estimate:hover {
+  background-color: var(--btn-hover);
+}
+
+header .logo-img {
+  margin-right: 3rem;
+}
+
+header .logo-img img {
+  width: 18rem;
+  object-fit: cover;
+}
+/* header section ends */
+
+/* ---------------home section starts -----------*/
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+} */
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#home .home-left h1 {
+  color: white;
+  font-size: 5.9rem;
+  font-weight: 300;
+  max-width: 50%;
+  margin-bottom: 6.8rem;
+}
+
+#home .home-left h1 span {
+  font-weight: 900;
+  color: var(--yellow-color);
+}
+
+/* home section ends */
+
+/* ---------------about us section starts--------------- */
+
+/* about us section ends */
+
+/* ---------------our services section starts--------------- */
+#ourservices .ourservices__info {
+  display: flex;
+}
+
+h1.title {
+  color: var(--yellow-color);
+  font-size: 3.2rem;
+  min-width: 27rem;
+}
+
+p.title {
+  color: white;
+  max-width: 66rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: start;
+  line-height: 2.3rem;
+}
+
+.cirle-direct {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #446c8f;
+  margin-left: 3rem;
+  /* position: relative;
+  left: 50rem;
+  top: 55rem; */
+}
+
+.cirle-direct-inside {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* position: absolute; */
+  background-color: var(--yellow-color);
+  /* top: 0;
+  left: 0; */
+  /* bottom: 0; */
+}
+/* our services section ends */
+
+/* ---------------party section starts--------------- */
+
+/* party section ends */
+
+/* ---------------projects section starts--------------- */
+/* projects section ends */
+
+/* ---------------man section starts--------------- */
+/* man section ends */
+
+/* ---------------news section starts--------------- */
+/* news section ends */
+
+/* ---------------footer section starts--------------- */
+
+/* footer section ends */
