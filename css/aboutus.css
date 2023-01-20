@@ -1,0 +1,361 @@
+/* ---------------basic css starts--------------- */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+:root {
+  --yellow-color: #faba0a;
+  --orange-color: #ff6900;
+  --black-color: #000000;
+  --gray-color: #abb8c3;
+  --white-color: #ffffff;
+  --border-radius: 0 0 16px;
+  --btn-hover: #fcce46;
+
+  --background-color: #373e44;
+  --grey-color: #3f4549;
+  /* --background-color: #212529; */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  font-family: "Maven Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section,
+.section {
+  padding: 2rem 9%;
+  background-color: var(--background-color);
+}
+
+/* basic css ends */
+
+/* -------------partials css starts------------ */
+.bounce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14.5rem;
+  animation: bounce infinite 2s linear;
+  cursor: pointer;
+}
+
+.bounce p,
+.bounce i {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 400;
+}
+
+.bounce i {
+  color: var(--yellow-color);
+  font-size: 2.5rem;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+h1.title {
+  color: var(--yellow-color);
+  font-size: 3.2rem;
+}
+
+p.title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: start;
+  line-height: 2.3rem;
+}
+.cirle-direct {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background-color: #5d5d5d;
+  position: relative;
+}
+
+.cirle-direct-inside {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--yellow-color);
+  top: 1.5rem;
+  left: 1.5rem;
+}
+/* partials css ends */
+
+/* ---------------header section starts--------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-weight: 500;
+  /* opacity: 0.95; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 100vw;
+  background-color: #abb8c3;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-img {
+  cursor: pointer;
+}
+
+header nav a {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: var(--white-color);
+  /* color: #ffffff; */
+}
+
+header nav a:hover {
+  background-color: var(--btn-hover);
+}
+
+header nav a.btn-estimate {
+  padding: 1.7rem;
+  background-color: var(--yellow-color);
+  border-radius: var(--border-radius);
+}
+
+header nav a.btn-estimate:hover {
+  background-color: var(--btn-hover);
+}
+
+header .logo-img {
+  margin-right: 3rem;
+}
+
+header .logo-img img {
+  width: 18rem;
+  object-fit: cover;
+}
+
+/* header section ends */
+
+/* ---------------home section starts -----------*/
+#home {
+  background-color: var(--background-color);
+  height: 100vh;
+  padding-bottom: 26rem;
+  /* ?????????? */
+}
+
+#home .image {
+  height: 85%;
+}
+
+#home .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home .about {
+}
+
+#home .about h1 {
+  color: white;
+  font-size: 8rem;
+}
+
+#home .about p {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  background-color: var(--yellow-color);
+  border-radius: 0 0 4rem;
+  max-width: 81rem;
+  padding: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+#home .about p span {
+  color: white;
+}
+/* home section ends */
+
+/* ----------------info section starts------------------ */
+#info {
+  display: flex;
+  padding-top: 8rem;
+}
+
+.info-text {
+  max-width: 48%;
+}
+
+.info-text h1 {
+  padding-top: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.info-text p {
+  line-height: 2.5rem;
+}
+#info .left {
+  margin-right: 5rem;
+}
+
+/* ---------------Our vision section starts-------------- */
+#ourvision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ourvision i {
+  color: #666;
+  font-size: 9rem;
+  padding-top: 3.5rem;
+}
+#ourvision p {
+  max-width: 57rem;
+  font-size: 4.7rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 7rem;
+  /* text-align: justify; */
+}
+#ourvision p span {
+  font-weight: 300;
+  color: var(--yellow-color);
+}
+/* Our vision section ends  */
+
+/* -------------team section starts-------------- */
+.team {
+  height: 55rem;
+}
+
+.team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* team section ends */
+/* -------------Meet section starts------------- */
+#meet {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+#meet .meet-left p {
+  min-width: 78%;
+  font-size: 3.2rem;
+  color: white;
+  font-weight: 700;
+}
+.meet-left p span {
+  color: white;
+}
+.meet-left p:nth-child(2) {
+  color: var(--yellow-color);
+  line-height: 3rem;
+}
+.meet-left p:nth-child(3) {
+  line-height: 1.5rem;
+}
+
+/* ----------------our client section starts-------------- */
+#ourclient {
+  display: flex;
+  padding-bottom: 12rem;
+}
+
+.ourclient-left {
+  width: 40%;
+  margin-right: 5.5rem;
+}
+.ourclient-left h1.title {
+  padding-top: 8rem;
+  margin-bottom: 1.8rem;
+}
+.ourclient-right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 4rem;
+}
+
+.ourclient-right .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------Our Partner section starts---------------  */
+#ourpartner {
+  display: flex;
+  padding-bottom: 20rem;
+}
+
+.ourpartner-left {
+  min-width: 56%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-right: 9rem;
+}
+
+.ourpartner-left .card {
+  max-height: 16rem;
+}
+.ourpartner-left .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 3rem;
+}
+.ourpartner-right h1.title {
+  padding-bottom: 1.8rem;
+}
+/* Our Partner section ends  */
+/* our client section ends */
