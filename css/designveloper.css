@@ -97,6 +97,23 @@ p.title {
   text-align: start;
   line-height: 2.3rem;
 }
+.cirle-direct {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background-color: #5d5d5d;
+  position: relative;
+}
+
+.cirle-direct-inside {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--yellow-color);
+  top: 1.5rem;
+  left: 1.5rem;
+}
 /* -------------partials css ends------------ */
 
 /* ---------------header section starts--------------- */
@@ -159,11 +176,6 @@ header .logo-img img {
 /* header section ends */
 
 /* ---------------home section starts -----------*/
-/* .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-} */
 #home {
   min-height: 100vh;
   display: flex;
@@ -284,24 +296,6 @@ header .logo-img img {
 .ourservices__info p.title {
   max-width: 66rem;
 }
-.cirle-direct {
-  width: 11rem;
-  height: 11rem;
-  border-radius: 50%;
-  background-color: #5d5d5d;
-  margin-left: 3rem;
-  position: relative;
-}
-
-.cirle-direct-inside {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  position: absolute;
-  background-color: var(--yellow-color);
-  top: 1.5rem;
-  left: 1.5rem;
-}
 
 .ourservices__card {
   display: grid;
@@ -339,6 +333,10 @@ header .logo-img img {
   line-height: 0;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.cirle-direct {
+  margin-left: 3rem;
 }
 /* our services section ends */
 
@@ -378,8 +376,6 @@ header .logo-img img {
 /* party section ends */
 
 /* ---------------projects section starts--------------- */
-
-
 
 /* projects section ends */
 

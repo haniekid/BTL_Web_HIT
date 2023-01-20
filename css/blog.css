@@ -1,0 +1,113 @@
+/* ---------------basic css starts--------------- */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+:root {
+  --yellow-color: #faba0a;
+  --orange-color: #ff6900;
+  --black-color: #000000;
+  --gray-color: #abb8c3;
+  --white-color: #ffffff;
+  --border-radius: 0 0 16px;
+  --btn-hover: #fcce46;
+
+  --background-color: #373e44;
+  --grey-color: #3f4549;
+  /* --background-color: #212529; */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  font-family: "Maven Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section,
+.section {
+  padding: 2rem 9%;
+  background-color: var(--background-color);
+}
+
+/* basic css ends */
+
+/* -------------partials css starts------------ */
+/* partials css ends */
+
+/* ---------------header section starts--------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-weight: 500;
+  /* opacity: 0.95; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 100vw;
+  background-color: #abb8c3;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-img {
+  cursor: pointer;
+}
+
+header nav a {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: var(--white-color);
+  /* color: #ffffff; */
+}
+
+header nav a:hover {
+  background-color: var(--btn-hover);
+}
+
+header nav a.btn-estimate {
+  padding: 1.7rem;
+  background-color: var(--yellow-color);
+  border-radius: var(--border-radius);
+}
+
+header nav a.btn-estimate:hover {
+  background-color: var(--btn-hover);
+}
+
+header .logo-img {
+  margin-right: 3rem;
+}
+
+header .logo-img img {
+  width: 18rem;
+  object-fit: cover;
+}
+
+/* header section ends */
+
+/* ---------------home section starts -----------*/
+
+/* home section ends */
