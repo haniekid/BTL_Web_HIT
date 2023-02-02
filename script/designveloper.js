@@ -6,13 +6,10 @@ let count3 = document.querySelector(".count3 .number");
 
 function count(elem, to, content, counter) {
   let count = 0;
-  let time = 100; // số lần nhảy số
-  let step = to / time;
+  let time = 2000/to; // thời gian giữa 2 bước nhảy 
 
   let counting = setInterval(() => {
-    count += step;
-    count = Math.round(count);
-
+    count += 1;
     if (counter == 1) {
       if (count > to) {
         clearInterval(counting);
@@ -30,7 +27,7 @@ function count(elem, to, content, counter) {
         elem.innerText = `${count}${content}`;
       }
     }
-  }, 2);
+  }, time);
 }
 
 count(count1, 7, "", 1);
@@ -38,3 +35,12 @@ count(count2, 250, "k", 2);
 count(count3, 50, "+", 3);
 
 // ----------------------cirle-direct---------------------------
+
+// ----------------------header---------------------------
+// window.onscroll = () => {
+//   if (window.scrollY > 0) {
+//     document.querySelector(".header").classList.add("fixed");
+//   } else {
+//     document.querySelector(".header").classList.remove("fixed");
+//   }
+// };
