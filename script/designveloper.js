@@ -34,6 +34,19 @@ count(count1, 7, "", 1);
 count(count2, 250, "k", 2);
 count(count3, 50, "+", 3);
 
+
+var checkView = 0;
+function handelCount() {
+  if(window.scrollY >= 650 && checkView == 0) {
+    count(count1, 7, "", 1);
+    count(count2, 250, "k", 2);
+    count(count3, 50, "+", 3);
+    checkView++;
+  }
+}
+
+document.onscroll = handelCount
+
 // ----------------------cirle-direct---------------------------
 
 // ----------------------header---------------------------
@@ -44,3 +57,22 @@ count(count3, 50, "+", 3);
 //     document.querySelector(".header").classList.remove("fixed");
 //   }
 // };
+
+
+// project section
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

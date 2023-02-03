@@ -354,8 +354,7 @@ header .logo-img img {
 }
 
 .ourservices__card .card:hover {
-  /* box-shadow: 1rem 1rem #373e44; */
-  /* box-shadow: 0 0.5rem 4rem 0.5rem #0581ed; */
+  box-shadow: 0 21px 41px 0 rgb(0 0 0 / 30%);
 }
 .card .card__img {
   width: 13rem;
@@ -421,10 +420,141 @@ header .logo-img img {
 /* party section ends */
 
 /* ---------------projects section starts--------------- */
+#project {
+  display: flex;
+  padding-top: 16rem;
+}
 
+.project-left {
+  width: 50%;
+  padding-right: 6rem;
+  position: relative;
+}
+
+.project-left p {
+  padding-top: 2.5rem;
+}
+
+.project-left .cirle-direct {
+  position: absolute;
+  top: 30rem;
+  left: 32rem;
+}
+
+.project-left .slider__info {
+  padding-top: 6rem;
+  position: relative;
+}
+
+.project-left .slider__info h1 {
+  color: white;
+  font-size: 2rem;
+  line-height: 0rem;
+}
+
+.project-left .slider__info p {
+  color: #6b7782;
+ line-height: 1.2rem;
+ font-size: 1.2rem;
+}
+
+/* .swiper-pagination {
+  position: absolute;
+  top: 5rem;
+} */
+.project-right {
+  width: 50%;
+  height: 44rem;
+}
+
+.project-right .container {
+  width: 100%;
+  height: 100%;
+}
+
+.project-right .container .slide-2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-right .container .slide-2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* projects section ends */
 
 /* ---------------man section starts--------------- */
+#man {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+#man .card__man {
+  width: 50%;
+}
+
+#man .card__man  .card{
+  
+}
+
+#man .card__man  .card-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: block;
+}
+
+#man .card__man  .card-img  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#man .card__man  .card p{
+  line-height: 2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#man .card__man  .card h1,
+#man .card__man  .card h5,
+#man .card__man  .card i{
+  text-align: center;
+}
+
+#man .card__man  .card i {
+  font-size: 3rem;
+  color:#6b7782;
+  display: block;
+  padding: 2rem 0 1.5rem 0;
+}
+
+#man .card__man  .card h1 {
+  color: var(--yellow-color);
+  font-weight: 500;
+}
+
+#man .card__man  .card h5{
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-top: 0.9rem;
+}
+#man .card__man  .card .card-img {
+
+}
 /* man section ends */
 
 /* ---------------news section starts--------------- */
