@@ -77,4 +77,14 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
+})
+var linkAbout = () => {
+  location.href = "./aboutus.html";
+  console.log("....")
+}
+// document.querySelector('.irle-direct-ourservices').addEventListener('onclick', () => {
+//   location.href = "./html/our.html";
+// })
+
+
+//c

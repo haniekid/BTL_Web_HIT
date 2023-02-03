@@ -182,10 +182,13 @@ header nav a {
   /* color: #ffffff; */
 }
 
-header nav a:hover {
+header nav a:hover{
   background-color: var(--btn-hover);
 }
 
+header nav a:first-child:hover{
+  background-color: transparent;
+}
 header nav a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
@@ -458,10 +461,13 @@ header .logo-img img {
  font-size: 1.2rem;
 }
 
-/* .swiper-pagination {
+.swiper-pagination {
   position: absolute;
-  top: 5rem;
-} */
+  top: 350px;
+  left: 0px;
+  text-align: left;
+  max-width: 200px;
+}
 .project-right {
   width: 50%;
   height: 44rem;
@@ -502,7 +508,7 @@ header .logo-img img {
 }
 
 #man .card__man  .card{
-  
+  margin-bottom: 8rem;
 }
 
 #man .card__man  .card-img {
@@ -513,6 +519,7 @@ header .logo-img img {
   margin-bottom: 2rem;
   text-align: center;
   display: block;
+  margin: 20rem auto 0 auto;
 }
 
 #man .card__man  .card-img  img {
