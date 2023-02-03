@@ -258,7 +258,7 @@ p.title {
   width: 100%;
   display: flex;
   padding-top: 35rem;
-  padding-bottom: 30rem;
+  padding-bottom: 15rem;
   
 }
 .content-left, .content-right{
@@ -365,13 +365,21 @@ p.title {
 .info_3 {
   padding-right: 12rem;
 }
+/* .logo1{
+  display: flex;
+} */
+
 
 .info_4 p {
   color: var(--yellow-color);
   font-weight: 300;
   font-size: 1.6rem;
 }
-
+.info_4 a img{
+  width: 72px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
 .footer__contact {
   background-color: #262a2d;
   height: 8rem;
