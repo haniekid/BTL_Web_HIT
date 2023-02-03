@@ -259,21 +259,24 @@ p.title {
   display: flex;
   padding-top: 35rem;
   padding-bottom: 30rem;
+  
 }
 .content-left, .content-right{
   width: 50%;
 }
+
 .content-left iframe{
   width: 100%;
 }
 .contact-form{
   padding-left: 48px;
   display: block;
+  width: 100%;
 }
 .contact-form h2 {
   margin-bottom: 2rem;
   color: #fcbf10;
-  font-size: 3.5rem;
+  font-size: 3.0rem;
 }
 
 .contact-form input, .custom-dropdown{
@@ -290,7 +293,13 @@ p.title {
 #content{
   height: 90px;
 }
-
+/* .captcha{
+  display: flex;
+  justify-content: right;
+}
+.captcha img{
+  width: 70%;
+} */
 .contact-page-submit {
   cursor: pointer;
   background-color: #fcbf10;
