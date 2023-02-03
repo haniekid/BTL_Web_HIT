@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- flickity -->
+  <!-- <link rel="stylesheet" href="../lib/flickity/flickity.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- swiper -->
   <link rel="stylesheet" href="../lib/swiper/swiper.css" />
   <!-- aos -->
@@ -23,9 +29,9 @@
   <!-- Header section starts -->
   <header class="section">
     <nav>
-      <div class="logo-img">
+      <a class="logo-img" href="../html/designveloper.html">
         <img src="../assets/images/designveloper/logo.png" alt="">
-      </div>
+      </a>
       <a href="../html/aboutus.html">About Us</a>
       <a href="">Services</a>
       <a href="">Projects</a>
@@ -42,57 +48,102 @@
   <div class="home" id="home">
     <div class="image">
       <div class="blog">
-        <h1>Blog</h1>
-        <!-- data-aos="fade-left" -->
-        <div class="swiper mySwiper">
-          <div class="blog__card swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="card-left">
-                <img src="../assets/images/blog/home_1.png" alt="">
-              </div>
-              <div class="card-right">
-                <p>LATEST POST</p>
-                <a href="#">An Overview of App Development Project Management</a>
-                <p>Idea alone won't stand out in the app development world. Execute that idea well. App development
-                  project management helps with this.</p>
-                <a href="#" class="read-more">Read More</a>
-              </div>
-            </div>
+        <h1 data-aos="fade-left">Blog</h1>
 
-            <div class="card swiper-slide">
-              <div class="card-left">
-                <img src="../assets/images/blog/home_2.png" alt="">
-              </div>
-              <div class="card-right">
-                <p>LATEST POST</p>
-                <a href="#">The Future of Shopping is Here: AI-Powered eCommerce Mobile Apps</a>
-                <p>his article explains the importance of artificial intelligence in e-commerce mobile app development
-                  for
-                  the future of shopping.</p>
-                <a href="#" class="read-more">Read More</a>
-              </div>
-            </div>
+        <!-- home - slider starts -->
+        <!-- <div class="blog__card main-carousel"  data-flickity='{ "wrapAround": true, }'>
 
-            <div class="card swiper-slide">
-              <div class="card-left">
-                <img src="../assets/images/blog/home_3.png" alt="">
-              </div>
-              <div class="card-right">
-                <p>LATEST POST</p>
-                <a href="#">Everything About Managing Website Projects</a>
-                <p>Managing website projects effectively involves optimal project management practices and more. Read on
-                  to
-                  find out more on this topic.</p>
-                <a href="#" class="read-more">Read More</a>
-              </div>
+          <div class="card carousel-cell">
+            <div class="card-left">
+              <img src="../assets/images/blog/home_1.png" alt="">
+            </div>
+            <div class="card-right">
+              <p>LATEST POST</p>
+              <a href="#">An Overview of App Development Project Management</a>
+              <p>Idea alone won't stand out in the app development world. Execute that idea well. App development
+                project management helps with this.</p>
+              <a href="#" class="read-more">Read More</a>
             </div>
           </div>
 
-          <div class="swiper-pagination"></div>
-        </div>
+          <div class="card carousel-cell">
+            <div class="card-left">
+              <img src="../assets/images/blog/home_2.png" alt="">
+            </div>
+            <div class="card-right">
+              <p>LATEST POST</p>
+              <a href="#">The Future of Shopping is Here: AI-Powered eCommerce Mobile Apps</a>
+              <p>his article explains the importance of artificial intelligence in e-commerce mobile app development
+                for
+                the future of shopping.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <div class="card carousel-cell">
+            <div class="card-left">
+              <img src="../assets/images/blog/home_3.png" alt="">
+            </div>
+            <div class="card-right">
+              <p>LATEST POST</p>
+              <a href="#">Everything About Managing Website Projects</a>
+              <p>Managing website projects effectively involves optimal project management practices and more. Read on
+                to
+                find out more on this topic.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- home - slider ends -->
+
+     
+              <div class="blog__card" data-aos="fade-left">
+      
+                <div class="card">
+                  <div class="card-left">
+                    <img src="../assets/images/blog/home_1.png" alt="">
+                  </div>
+                  <div class="card-right">
+                    <p>LATEST POST</p>
+                    <a href="#">An Overview of App Development Project Management</a>
+                    <p>Idea alone won't stand out in the app development world. Execute that idea well. App development
+                      project management helps with this.</p>
+                    <a href="#" class="read-more">Read More</a>
+                  </div>
+                </div>
+      
+                <div class="card">
+                  <div class="card-left">
+                    <img src="../assets/images/blog/home_2.png" alt="">
+                  </div>
+                  <div class="card-right">
+                    <p>LATEST POST</p>
+                    <a href="#">The Future of Shopping is Here: AI-Powered eCommerce Mobile Apps</a>
+                    <p>his article explains the importance of artificial intelligence in e-commerce mobile app development
+                      for
+                      the future of shopping.</p>
+                    <a href="#" class="read-more">Read More</a>
+                  </div>
+                </div>
+      
+                <div class="card ">
+                  <div class="card-left">
+                    <img src="../assets/images/blog/home_3.png" alt="">
+                  </div>
+                  <div class="card-right">
+                    <p>LATEST POST</p>
+                    <a href="#">Everything About Managing Website Projects</a>
+                    <p>Managing website projects effectively involves optimal project management practices and more. Read on
+                      to
+                      find out more on this topic.</p>
+                    <a href="#" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+    
+      </div>
+      </section>
     </div>
-    </section>
-  </div>
   </div>
 
   <!-- home section ends -->
@@ -576,6 +627,22 @@
   </footer>
   <!-- Footer section ends -->
 
+
+  <!-- man -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="js/jquery/.hislide.js"></script>
+  <script>
+    $('.slide').hiSlide();
+  </script> -->
+
+  <!-- flickity -->
+  <!-- <script src="../lib/flickity/flickity.js"></script> -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- slick -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../lib/slick/slick.js"></script>
 
   <!-- swiper -->
   <script src="../lib/swiper/swiper.js"></script>

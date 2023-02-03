@@ -1,3 +1,5 @@
+AOS.init();
+
 // -----------------------counter--------------------------
 // const scrollTop = window.scrollY || document.documentElement.scrollTop;???????????
 let count1 = document.querySelector(".count1 .number");

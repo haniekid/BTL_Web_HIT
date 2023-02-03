@@ -133,39 +133,6 @@ header .logo-img img {
     padding-top: 80px;
 }
 
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-/* .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-.swiper-slide {
-  width: 60%;
-}
-
-/* .swiper-pagination {
-  z-index: 100;
-  top: 40rem;
-  left: -40rem !important;
-} */
-
 #home .blog {
   background-color: transparent;
   margin-bottom: 16rem;
@@ -179,20 +146,80 @@ header .logo-img img {
   font-size: 8rem;
   transition-duration: 1s;
   padding-bottom: 4.5rem;
+  padding-left: 17rem;
 }
 
 #home .blog__card {
-  /* padding-left: 0; */
+  display: flex;
+  gap: 0 15rem;
 }
+/* slick */
+/* .slick-initialized .slick-slide{
+  margin-left: 15rem;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 7rem);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+.slick-dots button{
+  font-size: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #767e86;
+  transition: all 0.2s linear; 
+  z-index: 100 !important;
+}
+
+.slick-dots .slick-active button{
+  background-color: var(--yellow-color);
+} */
+
+
+/* hhh */
+.main-carousel {
+  background: transparent;
+  overflow: hidden;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 30rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  overflow: hidden;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: "";
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
 
 #home .blog__card .card{
   display: flex;
   /* width: 92rem; */
-  height: 30rem;
+  /* height: 30rem; */
 }
 
 #home .blog__card .card .card-left {
-  width: 50%;
+  width: 50rem;
   height: 100%;
 }
 
@@ -205,12 +232,17 @@ header .logo-img img {
 #home .blog__card .card .card-right {
   background-color: var(--yellow-color);
   border-radius: 0 0 4rem;
-  width: 50%;
+  width: 50rem;
 }
 
 .card-right {
   padding-left: 1.5rem;
 
+}
+
+.card-right .read-more {
+  margin-right: 2rem;
+  margin-top: 3rem;
 }
 
 .card-right p:first-child{
@@ -234,11 +266,17 @@ header .logo-img img {
 
 .card-right a:last-child{
   float: right;
-  padding: 1rem 5rem;
+  padding: 1.2rem 5rem;
   color: #fff;
   font-size: 1.5rem;
   background-color:#33383d;
   border-radius: 0 0 1.6rem;
+
+}
+
+.card-right a:last-child:hover {
+  background-color: #3f4549;
+  color: var(--yellow-color);
 }
 /* home section ends */
 

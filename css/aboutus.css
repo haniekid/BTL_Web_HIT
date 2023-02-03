@@ -424,6 +424,41 @@ header .logo-img img {
 
 /* our client section starts */
 
+
+/* ---------------------conclusion section starts------------------ */
+.conclusion {
+  padding-bottom: 18rem;
+  padding-top: 8rem;
+}
+.conclusion  .main {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--yellow-color);
+  align-items: center;
+  border-radius: 0 0 5rem;
+  padding: 3rem 4rem;
+}
+
+.conclusion a {
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.2rem 3.4rem;
+  background-color: #35393d;
+  border-radius: 0 0 16px;
+}
+
+.conclusion p {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.conclusion span {
+  color: #fff;
+}
+/* conclusion section ends */
+
+
 /* ---------------footer section starts--------------- */
 
 .footer__info{
