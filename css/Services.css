@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-   
+  
     
 }
 .body{
@@ -10,6 +10,7 @@
     height: 100vh;
 }
 .container1{
+     font-weight: 550;
     position: relative;
     top: 0;
     left: 0;
@@ -27,8 +28,6 @@
 }
 .c1{
     font-weight: bolder;
-    word-spacing: 5px;
-    letter-spacing: 2px;
     color: #FCBF10;
     font-size: 80px;
  
@@ -38,7 +37,6 @@
     font-size:70px ;
 }
 .c3{
-    word-spacing: 4px;
     margin: 20px 0;
     color: white;
     font-size: 15px;
@@ -56,6 +54,7 @@ button:hover{
     background-color: #FFCE41;
 }
 .container2{
+     font-weight: 550;
     width: 100%;
     height: 20vh;
     background-color: #31383F;
@@ -84,6 +83,7 @@ button:hover{
     padding: 5px;
 }
 .container3{
+     font-weight: 550;
     background-color: #31383F;
     display: flex;
     justify-content: center;
@@ -152,6 +152,7 @@ button:hover{
     display: block;
 }
 .container4{
+     font-weight: 550;
     background-color: #31383F;
     display: flex;
     justify-content: center;
@@ -197,7 +198,6 @@ button:hover{
     width: 33.33%;
 }
 .f_h{
-    letter-spacing: 2px;
     font-size: 40px;
     color: #FCBF10;
     margin-bottom: 10px;
@@ -207,12 +207,12 @@ button:hover{
     margin-bottom: 30px;
 }
 .container5{
+     font-weight: 550;
     display: flex;
     background-color: #222629;
     padding: 100px 0;
 }
 .container5_left{
-    letter-spacing: 2px;
     padding-left: 200px;
     width: 40%;
 }
@@ -237,6 +237,7 @@ button:hover{
     width: 110%;
 }
 .container6{
+     font-weight: 550;
     background-image:url("https://www.designveloper.com/wp-content/themes/designveloper/images/badge_bg.png");
     background-size: cover;
     background-position: center center;
@@ -244,8 +245,6 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-     line-height: 25px;
-    word-spacing: 2px;
     height: 500px;
 }
 .container6_h{
@@ -272,15 +271,16 @@ button:hover{
     padding: 10px;
 }
 .container7{
+    display: none;
+     font-weight: 550;
     height: 700px;
     background-color: #31383F;
 }
 .container8{
+     font-weight: 550;
     display: flex;
     background-color: #31383F;
     flex-wrap: wrap;
-    line-height: 25px;
-    word-spacing: 2px;
     padding-bottom: 150px;
 
 }
@@ -312,6 +312,7 @@ font-size: 20px;
     width: 90%;
 }
 .container9{
+     font-weight: 550;
     background-color: #31383F;
     color: white;
     display: flex;
@@ -335,7 +336,6 @@ font-size: 20px;
 }
 .container10{
     line-height: 25px;
-    word-spacing: 2px;
     background-color: #31383F;
     flex-direction: column;
     color: white;
@@ -370,6 +370,7 @@ td{
     padding: 5px;
 }
 .h10{
+     font-weight: 550;
     font-size: 20px;
     padding: 5px;
 }
@@ -377,8 +378,7 @@ td{
     background-color: #292D33;
 }
 .container11,.container12{
-    line-height: 25px;
-    word-spacing: 2px;
+     font-weight: 550;
     display: flex;
     background-color: #31383F;
     flex-wrap: wrap;
@@ -488,9 +488,11 @@ a::after{
     padding-bottom: 20px;
 }
 .container12{
+     font-weight: 550;
     padding-top: 50px;
 }
 .container13{
+     font-weight: 550;
     background-color: #191C21;
     display: flex;
     justify-content: center;
@@ -542,6 +544,7 @@ a::after{
     padding: 10px;
 }
 .container14{
+     font-weight: 550;
     background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%) 0% 0% / cover, url(https://www.designveloper.com/wp-content/themes/designveloper/images/services/estimation_bg.png);
     background-color: #191C21;
     background-size: cover;
@@ -558,7 +561,7 @@ a::after{
     padding-top: 80px;
     padding-bottom: 30px;
 }
-.w14_h2 , .w14_h3,.w14_h4,.w14_h6,.w14_h7,.w14_h8{
+.w14_h2 , .w14_h3,.w14_h4,.w14_h7,.w14_h8{
     color: white;
     display: flex;
     justify-content: space-between;
@@ -572,10 +575,13 @@ a::after{
     font-size: 12px;
 }
 input{
+    box-sizing: border-box;
     outline: none;
     height: 45px;
     border-radius: 10px;
     margin-bottom: 15px;
+    padding-left: 20px;
+
 }
 .yourname{
     width: 100%;
@@ -594,6 +600,7 @@ input{
 .wrapper14_item{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 20px;
 }
 .item1_3{
     padding: 10px;
@@ -616,9 +623,11 @@ input{
     border: none;
 }
 .idea{
+    box-sizing: border-box;
     width: 100%;
-    padding-left: 5px;
-    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-bottom: 100px;
+    padding-top: 15px;
 }
 .w14_h5{
     color: #646a70;
@@ -673,7 +682,7 @@ span::after{
 .button14{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .wrapperback{
     display: flex;
@@ -707,6 +716,7 @@ span::after{
     left: 0;
 }
 .container15{
+
     background-color: #2C3136;
     display: flex;
     justify-content: center;
@@ -769,4 +779,140 @@ span::after{
 .wrapper_footer i{
     padding: 0 10px;
     font-size: 20px;
+}
+.img_i14{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.img_i14{
+    height: 60px;
+}
+.w14_h6{
+    color: white;
+}
+.bar{
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #3E4852;
+    margin-top: 40px;
+}
+.process{
+    width: 25%;
+    background-color: #FCBF10;
+    height: 100%;
+    margin-left: 80px;
+    position: relative;
+}
+.process::after{
+    position: absolute;
+    left: 0;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid #FCBF10;
+    background-color: white;
+    transform: translate(-50%,-30%);
+}
+.process::before{
+    position: absolute;
+    right: 0;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid #FCBF10;
+    background-color: white;
+    transform: translate(50%,-30%);
+}
+.item_p{
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.container13_1{
+    display: flex;
+    justify-content: center;
+    background-color:#2F353B;
+    padding: 100px 0;
+}
+.wrapper13_1{
+    width: 80%;
+}
+.wrapper13_1 .h13_1{
+    color: #FCBF10;
+    font-size: 30px;
+    padding-bottom: 25px;
+
+}
+.contain13_1{
+    box-sizing: border-box;
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 30px;
+    
+}
+.item13_1{
+    background-color: #222629;
+    padding: 90px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.item13_1_container{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.item13_1_container .h1{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.item13_1_container .h2{
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.item13_1_container .h3{
+    font-weight: 500;
+}
+.item13_1_container .h4{
+    font-weight: 500;
+    display: flex;
+    opacity: 0;
+}
+.item13_1_container .img img{
+    height: 200px;
+}
+.item13_1_container .h4::after{
+    margin-left: 10px;
+    font-family: FontAwesome;
+    content: "\f061";
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #191C21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.item13_1:hover .item13_1_container .h4{
+    opacity: 1;
+}
+.item13_1:hover{
+    box-shadow: rgb(0 0 0 / 17%) 0px 0px 20px 12px;
 }
