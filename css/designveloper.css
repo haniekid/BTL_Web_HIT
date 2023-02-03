@@ -105,6 +105,11 @@ p.title {
   position: relative;
 }
 
+.cirle-direct:hover {
+  box-shadow: rgb(255 255 255 / 50%) 0 0 20px;
+}
+
+
 .cirle-direct-inside {
   width: 8rem;
   height: 8rem;
@@ -113,6 +118,32 @@ p.title {
   background-color: var(--yellow-color);
   top: 1.5rem;
   left: 1.5rem;
+}
+
+.cirle-direct-inside i {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 2.2rem;
+  color: #495259;
+  animation: spinner1 .75s infinite linear forwards;
+  animation-delay: 1s;
+}
+
+
+@keyframes spinner1 {
+  0% {
+    transform: translateX(-1rem);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  99% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0.8rem);
+  }
 }
 /* -------------partials css ends------------ */
 
@@ -151,10 +182,13 @@ header nav a {
   /* color: #ffffff; */
 }
 
-header nav a:hover {
+header nav a:hover{
   background-color: var(--btn-hover);
 }
 
+header nav a:first-child:hover{
+  background-color: transparent;
+}
 header nav a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
@@ -233,8 +267,18 @@ header .logo-img img {
 /* home section ends */
 
 /* ---------------about us section starts--------------- */
+#about {
+  padding-bottom: 13rem;
+}
 #about .about-left {
   max-width: 48%;
+  position: relative;
+}
+
+.about-left .cirle-direct {
+  position: absolute;
+  top: 33rem;
+  left: 40rem;
 }
 
 #about .container {
@@ -290,11 +334,11 @@ header .logo-img img {
 }
 
 .ourservices__info h1.title {
-  min-width: 27rem;
+  min-width: 30rem;
 }
 
 .ourservices__info p.title {
-  max-width: 66rem;
+  max-width: 69rem;
 }
 
 .ourservices__card {
@@ -313,7 +357,7 @@ header .logo-img img {
 }
 
 .ourservices__card .card:hover {
-  box-shadow: 1rem 0.2 1rem 1rem #373e44 0.2;
+  box-shadow: 0 21px 41px 0 rgb(0 0 0 / 30%);
 }
 .card .card__img {
   width: 13rem;
@@ -336,8 +380,11 @@ header .logo-img img {
 }
 
 .cirle-direct {
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
+
+
+
 /* our services section ends */
 
 /* ---------------party section starts--------------- */
@@ -376,15 +423,299 @@ header .logo-img img {
 /* party section ends */
 
 /* ---------------projects section starts--------------- */
+#project {
+  display: flex;
+  padding-top: 16rem;
+}
 
+.project-left {
+  width: 50%;
+  padding-right: 6rem;
+  position: relative;
+}
+
+.project-left p {
+  padding-top: 2.5rem;
+}
+
+.project-left .cirle-direct {
+  position: absolute;
+  top: 30rem;
+  left: 32rem;
+}
+
+.project-left .slider__info {
+  padding-top: 6rem;
+  position: relative;
+}
+
+.project-left .slider__info h1 {
+  color: white;
+  font-size: 2rem;
+  line-height: 0rem;
+}
+
+.project-left .slider__info p {
+  color: #6b7782;
+ line-height: 1.2rem;
+ font-size: 1.2rem;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 350px;
+  left: 0px;
+  text-align: left;
+  max-width: 200px;
+}
+.project-right {
+  width: 50%;
+  height: 44rem;
+}
+
+.project-right .container {
+  width: 100%;
+  height: 100%;
+}
+
+.project-right .container .slide-2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-right .container .slide-2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* projects section ends */
 
 /* ---------------man section starts--------------- */
+#man {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+#man .card__man {
+  width: 50%;
+}
+
+#man .card__man  .card{
+  margin-bottom: 8rem;
+}
+
+#man .card__man  .card-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: block;
+  margin: 20rem auto 0 auto;
+}
+
+#man .card__man  .card-img  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#man .card__man  .card p{
+  line-height: 2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#man .card__man  .card h1,
+#man .card__man  .card h5,
+#man .card__man  .card i{
+  text-align: center;
+}
+
+#man .card__man  .card i {
+  font-size: 3rem;
+  color:#6b7782;
+  display: block;
+  padding: 2rem 0 1.5rem 0;
+}
+
+#man .card__man  .card h1 {
+  color: var(--yellow-color);
+  font-weight: 500;
+}
+
+#man .card__man  .card h5{
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-top: 0.9rem;
+}
+#man .card__man  .card .card-img {
+
+}
 /* man section ends */
 
 /* ---------------news section starts--------------- */
+#news .news__info {
+  display: flex;
+  padding-bottom: 10rem;
+}
+
+.news__info h1.title {
+  min-width: 30rem;
+}
+
+.news__info p.title {
+  max-width: 69rem;
+}
+
+.news__card{
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding: 0 1rem;
+}
+.news__card #card .img {
+  height: 20rem;
+}
+.news__card #card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news__card #card .info p {
+  color: var(--yellow-color);
+  font-size: 1.4rem;
+  padding: 0.8rem 0;
+}
+
+.news__card #card .info h1 {
+  color: white;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-transform: capitalize;
+}
 /* news section ends */
+
+
+/* ---------------------conclusion section starts------------------ */
+.conclusion {
+  padding-bottom: 18rem;
+  padding-top: 8rem;
+}
+.conclusion  .main {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--yellow-color);
+  align-items: center;
+  border-radius: 0 0 5rem;
+  padding: 3rem 4rem;
+}
+
+.conclusion a {
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.2rem 3.4rem;
+  background-color: #35393d;
+  border-radius: 0 0 16px;
+}
+
+.conclusion p {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.conclusion span {
+  color: #fff;
+}
+
+
+/* conclusion section ends */
 
 /* ---------------footer section starts--------------- */
 
+.footer__info{
+  background-color: #2d3237;
+  height: 35rem;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 6rem;
+}
+
+.footer__info .logo-img {
+  cursor: pointer;
+  width: 18rem;
+}
+
+.footer__info .logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.info-card {
+  display: flex;
+  padding-top: 3rem;
+}
+.info-card .card a{
+  display: block;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.info-card .card a:hover {
+  color: var(--yellow-color);
+}
+.info_1 {
+  padding-right: 5rem;
+}
+
+.info_2 {
+  padding-right: 17rem;
+}
+.info_3 {
+  padding-right: 12rem;
+}
+
+.info_4 p {
+  color: var(--yellow-color);
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.footer__contact {
+  background-color: #262a2d;
+  height: 8rem;
+  padding: 0rem 9%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contact .icons i {
+  color: white;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.footer__contact .icons i:hover {
+  color: var(--yellow-color);
+}
+
+.footer__contact p {
+  padding-top: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 /* footer section ends */

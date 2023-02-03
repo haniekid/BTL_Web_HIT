@@ -1,0 +1,15 @@
+$(document).ready(function () {
+  const cardItems = document.querySelectorAll('.faq-card-item');
+  const cardContents = document.querySelectorAll('.faq-card-content');
+  const showAnswers = document.querySelectorAll('.button-faq-show-answer');
+  const hideAnswers = document.querySelectorAll('.button-faq-hide-answer');
+
+  for (let i = 0; i < cardItems.length; i++) {
+    cardItems[i].onclick = () => {
+      cardContents[i].classList.toggle('appear');
+    
+      showAnswers[i].classList.toggle('disappear');
+      hideAnswers[i].classList.toggle('disappear');
+    }
+  }
+})

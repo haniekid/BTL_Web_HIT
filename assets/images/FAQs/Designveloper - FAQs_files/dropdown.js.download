@@ -1,0 +1,119 @@
+const DROPDOWN_WRAPPER = "dropdown-wrapper";
+const DROPDOWN = "dropdown";
+const TARGET_SELECT = "custom-dropdown";
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(`.${TARGET_SELECT}`).forEach((selectEl) => {
+    const id = Math.floor(new Date().getTime() / 1000);
+    // get select options & clone them
+    const options = [];
+    selectEl.querySelectorAll("option").forEach((el) => {
+      options.push({
+        text: el.text,
+        value: el.value,
+      });
+    });
+    // set identifer data
+    selectEl.setAttribute("data-id", id);
+    selectEl.selectedIndex = -1;
+
+    // create custom dropdown
+    const wrapper = document.createElement("div");
+    wrapper.classList.add(DROPDOWN_WRAPPER);
+    wrapper.id = `${DROPDOWN_WRAPPER}-${id}`;
+
+    // we got options here
+    // create DOM for custom
+    const customSelectBox = document.createElement("ul");
+    customSelectBox.classList.add(DROPDOWN);
+
+    for (const op of options) {
+      const optionEl = document.createElement("li");
+      optionEl.innerText = op.text;
+      optionEl.dataset.option = op.value;
+      customSelectBox.appendChild(optionEl);
+    }
+
+    // selected text
+    const dropdownSelectedText = document.createElement("div");
+    dropdownSelectedText.classList.add("selected-text");
+    dropdownSelectedText.innerText = selectEl.getAttribute("data-default");
+
+    wrapper.appendChild(dropdownSelectedText);
+
+    wrapper.appendChild(customSelectBox);
+    selectEl.after(wrapper);
+  });
+
+  // add events
+  document.querySelectorAll(`.${DROPDOWN_WRAPPER}`).forEach((wrapper) => {
+    const id = wrapper.id
+      ? wrapper.id.replace(`${DROPDOWN_WRAPPER}-`, "")
+      : null;
+
+    wrapper
+      .querySelector(".selected-text")
+      .addEventListener("click", function () {
+        toggleSelectBox(id);
+      });
+
+    wrapper.querySelectorAll(`ul > li`).forEach((item) => {
+      item.addEventListener("click", function () {
+        selectItem(item, id);
+      });
+    });
+    if (id) {
+    } else {
+      console.log("Missing `id`");
+    }
+  });
+  document.addEventListener("click", function (event) {
+    document.querySelectorAll(`.${DROPDOWN_WRAPPER}`).forEach((wrapper) => {
+      // click outside
+      if (!(event.target !== wrapper && wrapper.contains(event.target))) {
+        if (wrapper.classList.contains("expand")) {
+          const id = wrapper.id
+            ? wrapper.id.replace(`${DROPDOWN_WRAPPER}-`, "")
+            : null;
+
+          toggleSelectBox(id);
+          if (id) {
+          } else {
+            console.log("Missing `id`");
+          }
+        }
+      }
+    });
+  });
+
+  function selectItem(item, id) {
+    const value = item.dataset.option;
+    document.querySelector(`select[data-id='${id}']`).value = value;
+    document.querySelector(
+      `#${DROPDOWN_WRAPPER}-${id} .selected-text`
+    ).innerHTML = item.innerHTML;
+
+    toggleSelectBox(id);
+  }
+
+  function toggleSelectBox(id) {
+    const wrapper = document.getElementById(`${DROPDOWN_WRAPPER}-${id}`);
+    const menu = wrapper.querySelector("ul");
+
+    if (wrapper) {
+      if (wrapper.classList.contains("expand")) {
+        // set height = 40
+        menu.style.height = "0px";
+      } else {
+        // calc height
+        let height = 0;
+
+        menu.querySelectorAll("li").forEach((item) => {
+          height += item.clientHeight;
+        });
+        menu.style.height = `${height}px`;
+      }
+      wrapper.classList.toggle("expand");
+    }
+  }
+});

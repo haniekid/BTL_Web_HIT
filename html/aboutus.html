@@ -8,21 +8,21 @@
   <title>Document</title>
 
   <!-- aos -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../lib/aos-master/dist/aos.css">
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 
-  <link rel="stylesheet" href="../css/aboutus.css">+
+  <link rel="stylesheet" href="../css/aboutus.css">
 </head>
 
 <body>
   <!-- Header section starts -->
   <header class="section">
     <nav>
-      <div class="logo-img">
+      <a class="logo-img" href="../html/designveloper.html">
         <img src="../assets/images/designveloper/logo.png" alt="">
-      </div>
+      </a>
       <a href="../html/aboutus.html">About Us</a>
       <a href="">Services</a>
       <a href="">Projects</a>
@@ -38,35 +38,40 @@
   <!-- home section starts -->
   <div class="home" id="home">
     <div class="image">
-      <img src="../assets/images/aboutus/home.jpg" alt="">
+      <section class="about">
+        <h1 data-aos="fade-left" data-aos-delay="100">About us</h1>
+        <p data-aos="fade-left" data-aos-delay="400">Designveloper is the leading <span>software development
+          </span>company in Ho Chi Minh City, Vietnam, founded in
+          early 2013 with a team of professional and enthusiastic Web developers, Mobile developers, UI/UX designers and
+          VOIP experts. Following a systematic approach, we intend to deliver the best and most cost-effective software
+          services to our clients.</p>
+      </section>
+
+      <div class="bounce">
+        <i class="fa-sharp fa-solid fa-circle-down"></i>
+        <p>SCROLL DOWN</p>
+      </div>
     </div>
-    <section class="about">
-      <h1>About us</h1>
-      <p>Designveloper is the leading <span>software development </span>company in Ho Chi Minh City, Vietnam, founded in
-        early 2013 with a team of professional and enthusiastic Web developers, Mobile developers, UI/UX designers and
-        VOIP experts. Following a systematic approach, we intend to deliver the best and most cost-effective software
-        services to our clients.</p>
-    </section>
   </div>
   <!-- home section ends -->
 
   <!-- information section starts -->
   <section class="info" id="info">
-    <div class="info-text left">
+    <div class="info-text left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <h1 class="title">Realizing ideas</h1>
       <p class="title">Our mission is to help startups and businesses transform their ideas into real and impactful
         products. We, well-trained coders in Java, Python, GoLang, C++, PHP, Angular, NodeJS, ReactJS, React Native as
         well as iOS and Android application development, always work to offer you the best software solutions.</p>
     </div>
-    <div class="info-image">
+    <div class="info-image right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <img src="../assets/images/aboutus/info_1.jpg" alt="">
     </div>
   </section>
   <section class="info" id="info">
-    <div class="info-image left">
+    <div class="info-image left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <img src="../assets/images/aboutus/info_2.jpg" alt="">
     </div>
-    <div class="info-text">
+    <div class="info-text right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <h1 class="title">Our culture</h1>
       <p class="title">At Designveloper, we believe that a successful product must help clients resolve their business
         problem, and furthermore, improve their business growth. Impactful products, satisfied customers, developmental
@@ -78,7 +83,8 @@
   <!-- Our vision section starts -->
   <section class="ourvision" id="ourvision">
     <i class="fa-solid fa-quote-left"></i>
-    <p>Our vision<span> is to become the world’s leading company of</span> realizing ideas<span>.</span> </p>
+    <p data-aos="fade-up" data-aos-duration="2000">Our vision<span> is to become the world’s leading company of</span>
+      realizing ideas<span>.</span> </p>
   </section>
   <!-- Our vision section ends -->
 
@@ -89,7 +95,7 @@
   <!-- team section ends -->
 
   <!-- Meet section starts -->
-  <section class="meet" id="meet">
+  <section class="meet" id="meet" data-aos="fade-up" data-aos-duration="1000">
     <div class="meet-left">
       <p>Meet all talented, young and enthusiastic </p>
       <p>Web developers, Mobile developers, UI/UX designers <span>.</span></p>.
@@ -97,19 +103,20 @@
     </div>
     <div class="meet-right cirle-direct">
       <div class="cirle-direct-inside">
+        <i class="fa-solid fa-arrow-right"></i>
       </div>
     </div>
   </section>
   <!-- Meet section ends -->
   <!-- our client section starts -->
   <section class="ourclient" id="ourclient">
-    <div class="ourclient-left">
+    <div class="ourclient-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
       <h1 class="title">Our clients</h1>
       <p class="title">We deliver outsourcing solutions to start-ups and businesses in all sectors such as solar energy,
         finance, logistic, healthcare, media, education, transportation, etc. Clients come to us with their ideas and we
         helps our clients implement initial ideas step by step to design and build applications (web, mobile, ...).</p>
     </div>
-    <div class="ourclient-right">
+    <div class="ourclient-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
       <div class="img">
         <img src="../assets/images/aboutus/ourclient_1.png" alt="">
       </div>
@@ -175,16 +182,22 @@
   <!-- our client section ends -->
 
   <!-- Our Partner section starts -->
-  <section id="ourpartner">
+  <section id="ourpartner" data-aos="fade-up" data-aos-duration="1000">
     <div class="ourpartner-left">
+      <!-- <div class="card" onmouseover="initialImg1(this)" onmouseout="normalImg1(this)" ></div>
+      <div class="card" onmouseover="initialImg2(this)" onmouseout="normalImg2(this)"></div>
+      <div class="card" onmouseover="initialImg3(this)" onmouseout="normalImg3(this)"></div> -->
       <div class="card">
-        <img src="../assets/images/aboutus/ourpartner_1.jpg" alt="">
+        <img src="../assets/images/aboutus/ourpartner_dentrang_1.jpg" alt="" class="initial-img">
+        <img src="../assets/images/aboutus/ourpartner_1.jpg" alt="" class="hidden-img">
       </div>
       <div class="card">
-        <img src="../assets/images/aboutus/ourpartner_2.jpg" alt="">
+        <img src="../assets/images/aboutus/ourpartner_dentrang_2.jpg" alt="" class="initial-img">
+        <img src="../assets/images/aboutus/ourpartner_2.jpg" alt="" class="hidden-img">
       </div>
       <div class="card">
-        <img src="../assets/images/aboutus/ourpartner_3.jpg" alt="">
+        <img src="../assets/images/aboutus/ourpartner_dentrang_3.jpg" alt="" class="initial-img">
+        <img src="../assets/images/aboutus/ourpartner_3.jpg" alt="" class="hidden-img">
       </div>
     </div>
     <div class="ourpartner-right">
@@ -194,14 +207,71 @@
     </div>
   </section>
   <!-- Our Partner section ends -->
+
+
+  <section class="conclusion">
+    <div class="main"  data-aos="zoom-in" data-aos-duration="1200" >
+      <p href="">Got an <span>idea</span> ? We can help you <span>realize</span> it.
+      </p>
+      <a>Estimate projects</a>
+    </div>
+  </section>
+
+  
   <!-- Footer section starts -->
+  <footer>
+    <div class="footer__info">
+      <div class="logo-img">
+        <img src="../assets/images/designveloper/logo.png" alt="">
+      </div>
+
+      <div class="info-card">
+        <div class="info_1 card">
+          <a href="">About us</a>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">Project estimation</a>
+        </div>
+        <div class="info_2 card">
+          <a href="">Projects</a>
+          <a href="">How We Work</a>
+          <a href="">Contact us</a>
+          <a href="">FAQs</a>
+        </div>
+        <div class="info_3 card">
+          <a href="">Software Development Services</a>
+          <a href="">Web Development Services</a>
+          <a href="">Mobile App Development Services</a>
+          <a href="">Web Application Development Services</a>
+          <a href="">React Native Development Services</a>
+        </div>
+        <div class="info_4 card">
+          <p>VERIFIED BY:</p>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><img src="" alt=""></a>
+          <a href=""><img src="" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__contact">
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-behance"></i>
+        <i class="fa-brands fa-dribbble"></i>
+      </div>
+      <p>© 2023 - Designveloper</p>
+    </div>
+  </footer>
   <!-- Footer section ends -->
 
   <!-- aos -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="../lib/aos-master/dist/aos.js"></script>
+  <!-- script -->
+  <script src="../script/aboutus.js"></script>
 </body>
 
 </html>

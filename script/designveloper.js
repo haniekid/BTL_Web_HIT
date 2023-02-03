@@ -1,3 +1,5 @@
+AOS.init();
+
 // -----------------------counter--------------------------
 // const scrollTop = window.scrollY || document.documentElement.scrollTop;???????????
 let count1 = document.querySelector(".count1 .number");
@@ -6,13 +8,10 @@ let count3 = document.querySelector(".count3 .number");
 
 function count(elem, to, content, counter) {
   let count = 0;
-  let time = 100; // số lần nhảy số
-  let step = to / time;
+  let time = 2000/to; // thời gian giữa 2 bước nhảy 
 
   let counting = setInterval(() => {
-    count += step;
-    count = Math.round(count);
-
+    count += 1;
     if (counter == 1) {
       if (count > to) {
         clearInterval(counting);
@@ -30,11 +29,62 @@ function count(elem, to, content, counter) {
         elem.innerText = `${count}${content}`;
       }
     }
-  }, 2);
+  }, time);
 }
 
 count(count1, 7, "", 1);
 count(count2, 250, "k", 2);
 count(count3, 50, "+", 3);
 
+
+var checkView = 0;
+function handelCount() {
+  if(window.scrollY >= 650 && checkView == 0) {
+    count(count1, 7, "", 1);
+    count(count2, 250, "k", 2);
+    count(count3, 50, "+", 3);
+    checkView++;
+  }
+}
+
+document.onscroll = handelCount
+
 // ----------------------cirle-direct---------------------------
+
+// ----------------------header---------------------------
+// window.onscroll = () => {
+//   if (window.scrollY > 0) {
+//     document.querySelector(".header").classList.add("fixed");
+//   } else {
+//     document.querySelector(".header").classList.remove("fixed");
+//   }
+// };
+
+
+// project section
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
+var linkAbout = () => {
+  location.href = "./aboutus.html";
+  console.log("....")
+}
+// document.querySelector('.irle-direct-ourservices').addEventListener('onclick', () => {
+//   location.href = "./html/our.html";
+// })
+
+
+//c
