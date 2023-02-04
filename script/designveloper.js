@@ -52,13 +52,13 @@ document.onscroll = handelCount
 // ----------------------cirle-direct---------------------------
 
 // ----------------------header---------------------------
-// window.onscroll = () => {
-//   if (window.scrollY > 0) {
-//     document.querySelector(".header").classList.add("fixed");
-//   } else {
-//     document.querySelector(".header").classList.remove("fixed");
-//   }
-// };
+window.onscroll = () => {
+  if (window.scrollY > 0) {
+    document.querySelector(".header").classList.add("fixed");
+  } else {
+    document.querySelector(".header").classList.remove("fixed");
+  }
+};
 
 
 // project section

@@ -152,16 +152,14 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 1000;
   font-weight: 500;
-  /* opacity: 0.95; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 8rem;
   width: 100vw;
-  background-color: #abb8c3;
+  background-color: transparent !important;
 }
 
 header nav {
@@ -179,16 +177,17 @@ header nav a {
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   color: var(--white-color);
-  /* color: #ffffff; */
 }
 
-header nav a:hover{
+header nav a:hover {
   background-color: var(--btn-hover);
 }
 
-header nav a:first-child:hover{
+header nav a:first-child:hover {
   background-color: transparent;
 }
+
+
 header nav a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
@@ -207,6 +206,14 @@ header .logo-img img {
   width: 18rem;
   object-fit: cover;
 }
+
+.header.fixed {
+  background-color: var(--background-color) !important;
+  opacity: 0.95;
+  padding-bottom: 2rem;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
 /* header section ends */
 
 /* ---------------home section starts -----------*/
@@ -662,10 +669,12 @@ header .logo-img img {
   width: 100%;
   height: 100%;
 }
+
 .info-card {
   display: flex;
   padding-top: 3rem;
 }
+
 .info-card .card a{
   display: block;
   color: white;
@@ -676,6 +685,7 @@ header .logo-img img {
 .info-card .card a:hover {
   color: var(--yellow-color);
 }
+
 .info_1 {
   padding-right: 5rem;
 }
@@ -683,6 +693,7 @@ header .logo-img img {
 .info_2 {
   padding-right: 17rem;
 }
+
 .info_3 {
   padding-right: 12rem;
 }
@@ -691,6 +702,22 @@ header .logo-img img {
   color: var(--yellow-color);
   font-weight: 300;
   font-size: 1.6rem;
+}
+
+.info_4-contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 7rem;
+  width: 6rem;
+  margin-top: -4rem;
+}
+
+.info_4-contact a {
+  margin: -0.5rem;
+}
+
+.info_4-contact a img {
+  height: 3rem;
 }
 
 .footer__contact {

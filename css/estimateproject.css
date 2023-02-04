@@ -74,6 +74,10 @@ header nav a:hover {
   background-color: var(--btn-hover);
 }
 
+header nav a:first-child:hover {
+  background-color: transparent;
+}
+
 header nav a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
@@ -92,6 +96,7 @@ header .logo-img img {
   width: 18rem;
   object-fit: cover;
 }
+
 .container14{
     background-color: var(--background-color);
     background-size: cover;
@@ -227,10 +232,16 @@ span::after{
 .item7:checked~span::after{
     width: 15px;
 }
+
+.img_i14{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 .button14{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .button14 button{
      cursor: pointer;

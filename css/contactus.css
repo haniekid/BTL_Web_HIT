@@ -74,6 +74,10 @@ header nav a:hover {
   background-color: var(--btn-hover);
 }
 
+header nav a:first-child:hover {
+  background-color: transparent;
+}
+
 header nav a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
@@ -258,22 +262,25 @@ p.title {
   width: 100%;
   display: flex;
   padding-top: 35rem;
-  padding-bottom: 30rem;
+  padding-bottom: 15rem;
+  
 }
 .content-left, .content-right{
   width: 50%;
 }
+
 .content-left iframe{
   width: 100%;
 }
 .contact-form{
   padding-left: 48px;
   display: block;
+  width: 100%;
 }
 .contact-form h2 {
   margin-bottom: 2rem;
   color: #fcbf10;
-  font-size: 3.5rem;
+  font-size: 3.0rem;
 }
 
 .contact-form input, .custom-dropdown{
@@ -306,6 +313,7 @@ p.title {
   border-radius: 0 0 16px;
   font-size: 15px;
 }
+
 .dropdown-wrapper .selected-text {
   position: relative;
   height: 40px;
@@ -328,14 +336,17 @@ p.title {
   cursor: pointer;
   width: 18rem;
 }
+
 .footer__info .logo-img img {
   width: 100%;
   height: 100%;
 }
+
 .info-card {
   display: flex;
   padding-top: 3rem;
 }
+
 .info-card .card a{
   display: block;
   color: white;
@@ -346,6 +357,7 @@ p.title {
 .info-card .card a:hover {
   color: var(--yellow-color);
 }
+
 .info_1 {
   padding-right: 5rem;
 }
@@ -353,14 +365,41 @@ p.title {
 .info_2 {
   padding-right: 17rem;
 }
+
 .info_3 {
   padding-right: 12rem;
 }
+/* .logo1{
+  display: flex;
+} */
+
 
 .info_4 p {
   color: var(--yellow-color);
   font-weight: 300;
   font-size: 1.6rem;
+}
+
+.info_4 a img{
+  width: 72px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.info_4-contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 7rem;
+  width: 6rem;
+  margin-top: -4rem;
+}
+
+.info_4-contact a {
+  margin: -0.5rem;
+}
+
+.info_4-contact a img {
+  height: 3rem;
 }
 
 .footer__contact {

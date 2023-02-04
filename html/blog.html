@@ -27,19 +27,19 @@
 
 <body>
   <!-- Header section starts -->
-  <header class="section">
+  <header class="section header">
     <nav>
       <a class="logo-img" href="../html/designveloper.html">
         <img src="../assets/images/designveloper/logo.png" alt="">
       </a>
       <a href="../html/aboutus.html">About Us</a>
-      <a href="">Services</a>
-      <a href="">Projects</a>
-      <a href="">Careers</a>
+      <a href="../html/services.html">Services</a>
+      <a href="../html/project.html">Projects</a>
+      <a href="../html/careers.html">Careers</a>
       <a href="../html/blog.html">Blog</a>
-      <a href="">Contact Us</a>
-      <a href="">FAQs</a>
-      <a href="" class="btn-estimate">Estimate Project</a>
+      <a href="../html/contactus.html">Contact Us</a>
+      <a href="../html/faqs.html">FAQs</a>
+      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
     </nav>
   </header>
   <!-- Header section ends -->
@@ -48,10 +48,10 @@
   <div class="home" id="home">
     <div class="image">
       <div class="blog">
-        <h1 data-aos="fade-left">Blog</h1>
+        <h1 data-aos="fade-left" data-aos-delay="100">Blog</h1>
 
         <!-- home - slider - flickity starts -->
-        <div class="blog__card main-carousel"  data-flickity='{ "wrapAround": true, }'>
+        <div class="blog__card main-carousel" data-aos="fade-left" data-aos-delay="500" data-flickity='{ "wrapAround": true, }'>
 
           <div class="card carousel-cell">
             <div class="card-left">
@@ -581,11 +581,11 @@
 
   <!-- Footer section starts -->
   <footer>
-    <div class="footer__info pb-4rem">
+    <div class="footer__info">
       <div class="logo-img">
-        <img src="../assets/images/designveloper/logo.png" alt="">
-      </div>
-
+          <img src="../assets/images/designveloper/logo.png" alt="">
+        </div>
+      
       <div class="info-card">
         <div class="info_1 card">
           <a href="">About us</a>
@@ -593,12 +593,14 @@
           <a href="">Blog</a>
           <a href="">Project estimation</a>
         </div>
+
         <div class="info_2 card">
           <a href="">Projects</a>
           <a href="">How We Work</a>
           <a href="">Contact us</a>
           <a href="">FAQs</a>
         </div>
+
         <div class="info_3 card">
           <a href="">Software Development Services</a>
           <a href="">Web Development Services</a>
@@ -606,20 +608,24 @@
           <a href="">Web Application Development Services</a>
           <a href="">React Native Development Services</a>
         </div>
+
         <div class="info_4 card">
           <p>VERIFIED BY:</p>
-          <a href=""><img src="" alt=""></a>
-          <a href=""><img src="" alt=""></a>
-          <a href=""><img src="" alt=""></a>
-          <a href=""><img src="" alt=""></a>
+          <div class="info_4-contact">
+            <a href="#"><img src="../assets/images/designveloper/footer_1.png" alt=""></a>
+            <a href="#"><img src="../assets/images/designveloper/footer_2.png" alt=""></a>
+            <a href="#"><img src="../assets/images/designveloper/footer_3.png" alt=""></a>
+            <a href="#"><img src="../assets/images/designveloper/footer_4.png" alt=""></a>
+          </div>
         </div>
+        
       </div>
     </div>
 
     <div class="footer__contact">
       <div class="icons">
         <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-twitter"></i> 
         <i class="fa-brands fa-linkedin-in"></i>
         <i class="fa-brands fa-behance"></i>
         <i class="fa-brands fa-dribbble"></i>
