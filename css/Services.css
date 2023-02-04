@@ -821,7 +821,7 @@ span::after{
     height: 15px;
     background-color: #FCBF10;
     border-radius: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-56%,-55%)
 }
 .item7:checked~span::after{
     width: 15px;
