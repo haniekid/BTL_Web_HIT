@@ -89,6 +89,10 @@ header {
   header nav a.btn-estimate:hover {
     background-color: var(--btn-hover);
   }
+
+  header nav a:first-child:hover {
+    background-color: transparent;
+  }
   
   header .logo-img {
     margin-right: 3rem;

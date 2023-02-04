@@ -83,6 +83,10 @@ header nav a:hover {
   background-color: var(--btn-hover);
 }
 
+header nav a:first-child:hover {
+  background-color: transparent;
+}
+
 header nav a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
