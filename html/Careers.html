@@ -20,21 +20,21 @@
 
 <body>
      <!-- Header section starts -->
-     <header class="section header">
-        <nav>
-          <a class="logo-img" href="../html/designveloper.html">
-            <img src="../assets/images/designveloper/logo.png" alt="">
-          </a>
-          <a href="../html/aboutus.html">About Us</a>
-          <a href="../html/Services.html">Services</a>
-          <a href="../html/Project.html">Projects</a>
-          <a href="../html/Careers.html">Careers</a>
-          <a href="../html/blog.html">Blog</a>
-          <a href="../html/contactus.html">Contact Us</a>
-          <a href="../html/faqs.html">FAQs</a>
-          <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
-        </nav>
-      </header>
+  <header class="section">
+    <nav>
+      <a class="logo-img" href="../html/designveloper.html">
+        <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/dsv-logo.png" alt="">
+      </a>
+      <a href="../html/aboutus.html">About Us</a>
+      <a href="">Services</a>
+      <a href="">Projects</a>
+      <a href="">Careers</a>
+      <a href="../html/blog.html">Blog</a>
+      <a href="">Contact Us</a>
+      <a href="">FAQs</a>
+      <a href="" class="btn-estimate">Estimate Project</a>
+    </nav>
+  </header>
   <!-- Header section ends -->
    <div class="header1">
     <div class="wrapper">
@@ -199,7 +199,6 @@
                     </div>
                     <p class="word">" To work hard is a method of personality training "</p>
                 </div>
-                <!-- ...... -->
             </div>
             <div id="item4" class="item">
                 <div class="slider">
@@ -339,7 +338,7 @@
                     <p class="word">" To work hard is a method of personality training "</p>
                 </div>
             </div>
-            <div id="item7" class="item"> 
+            <div id="item7" class="item">
                 <div class="slider">
                     <div class="slider_item">
                         <div class="img">
@@ -639,28 +638,9 @@
         </div>
       </footer>
       <!-- Footer section ends -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.slider').slick({
-
-            });
-        });
-    </script>
-<script>
-    $('.tab_content .item').hide();
-  $('.tab_content .item:first-child').fadeIn();
-  $('.tab_header .item').click(function () {
-      $('.item').removeClass('active');
-      $(this).addClass('active');
-      let id = $(this).children('a').attr('href');
-      $('.tab_content .item').hide();
-      $(id).fadeIn();
-      return false;
-  });
-</script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="/script/Careers.js"></script>
 </body>
 
-</html> 
+</html>
