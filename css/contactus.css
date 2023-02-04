@@ -365,9 +365,6 @@ p.title {
 .info_3 {
   padding-right: 12rem;
 }
-/* .logo1{
-  display: flex;
-} */
 
 
 .info_4 p {
@@ -375,10 +372,18 @@ p.title {
   font-weight: 300;
   font-size: 1.6rem;
 }
-.info_4 a img{
-  width: 72px;
-    margin-right: 8px;
-    margin-bottom: 2px;
+.info_4-contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 7rem;
+  width: 6rem;
+}
+.info_4-contact a {
+  margin: -0.5rem;
+}
+
+.info_4-contact a img {
+  height: 3rem;
 }
 .footer__contact {
   background-color: #262a2d;

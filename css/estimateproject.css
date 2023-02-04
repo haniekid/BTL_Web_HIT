@@ -329,7 +329,20 @@ span::after{
     font-weight: 300;
     font-size: 1.6rem;
   }
+  .info_4-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 7rem;
+    width: 6rem;
+  }
+  .info_4-contact a {
+    margin: -0.5rem;
+  }
   
+  .info_4-contact a img {
+    height: 3rem;
+
+  }
   .footer__contact {
     background-color: #262a2d;
     height: 8rem;
