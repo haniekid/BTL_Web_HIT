@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
     <link rel="stylesheet" href="../css/Project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,33 +16,47 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Projects</title>
+   
 </head>
 
 <body>
-     <!-- Header section starts -->
-     <header class="section header">
-        <nav>
-          <a class="logo-img" href="../html/designveloper.html">
-            <img src="../assets/images/designveloper/logo.png" alt="">
-          </a>
-          <a href="../html/aboutus.html">About Us</a>
-          <a href="../html/Services.html">Services</a>
-          <a href="../html/Project.html">Projects</a>
-          <a href="../html/Careers.html">Careers</a>
-          <a href="../html/blog.html">Blog</a>
-          <a href="../html/contactus.html">Contact Us</a>
-          <a href="../html/faqs.html">FAQs</a>
-          <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
-        </nav>
-      </header>
+      <!-- Header section starts -->
+  <header class="section header">
+    <a class="logo-img header-left" href="../html/designveloper.html">
+      <img src="../assets/images/designveloper/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+      <a href="../html/aboutus.html">About Us</a>
+      <a href="../html/Services.html">Services</a>
+      <a href="../html/Project.html">Projects</a>
+      <a href="../html/Careers.html">Careers</a>
+      <a href="../html/blog.html">Blog</a>
+      <a href="../html/contactus.html">Contact Us</a>
+      <a href="../html/faqs.html">FAQs</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
+      <i class="fa-solid fa-bars-staggered menu"></i>
+    </div>
+  </header>
   <!-- Header section ends -->
    <div class="header2">
     <div class="wrapper"></div>
    </div>
     <div class="container">
-        <div class="wrapper1">
-            <div class="scroll">SCROLL DOWN</div>
-            <div class="list">
+        <div  class="wrapper1 ">
+            <div class="scroll">
+                <div  class="wrapper2">
+                    <a href="#list" class="bounce">
+                        <i class="fa-sharp fa-solid fa-circle-down"></i>
+                        <p>SCROLL DOWN</p>
+                    </a>
+                </div>
+            </div>
+            <div class="list" id="list">
+               <div data-aos="fade-up" class="list_wrapper">
                 <div class="item">
                     <h1>250k+</h1>
                     <p>Working hours</p>
@@ -58,6 +73,7 @@
                     <h1>100+</h1>
                     <p>Projects Delivered </p>
                 </div>
+               </div>
             </div>
             <div class="list2">
                 <div class="item2">
@@ -77,7 +93,7 @@
                         <img src="https://www.designveloper.com/wp-content/uploads/2018/10/Lumin-768x576.jpg" alt="">
                     </div>
                 </div>
-                <div class="item2">
+                <div class="item2 chan">
                     <div class="right">
                         <img src="https://www.designveloper.com/wp-content/uploads/2018/10/Swell-Switchboard-1-768x576.jpg"
                             alt="">
@@ -114,7 +130,7 @@
                     </div>
 
                 </div>
-                <div class="item2">
+                <div class="item2 chan">
                     <div class="right">
                         <img src="https://www.designveloper.com/wp-content/uploads/2018/10/Joynit-768x576.jpg" alt="">
                     </div>
@@ -148,7 +164,7 @@
 
 
                 </div>
-                <div class="item2">
+                <div class="item2 chan">
                     <div class="right">
                         <img src="https://www.designveloper.com/wp-content/uploads/2018/10/introduce-CV-Simply-2-768x577.jpg"
                             alt="">
@@ -182,7 +198,7 @@
 
 
                 </div>
-                <div class="item2">
+                <div class="item2 chan">
                     <div class="right">
                         <img src="https://www.designveloper.com/wp-content/uploads/2022/07/fearture-image-ODC.png"
                             alt="">
@@ -212,57 +228,93 @@
         </div>
 
     </div>
-    <!-- Footer section starts -->
-    <footer>
-        <div class="footer__info">
-          <div class="logo-img">
-            <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/dsv-logo.png" alt="">
-          </div>
-    
-          <div class="info-card">
-            <div class="info_1 card">
-              <a href="">About us</a>
-              <a href="">Careers</a>
-              <a href="">Blog</a>
-              <a href="">Project estimation</a>
-            </div>
-            <div class="info_2 card">
-              <a href="">Projects</a>
-              <a href="">How We Work</a>
-              <a href="">Contact us</a>
-              <a href="">FAQs</a>
-            </div>
-            <div class="info_3 card">
-              <a href="">Software Development Services</a>
-              <a href="">Web Development Services</a>
-              <a href="">Mobile App Development Services</a>
-              <a href="">Web Application Development Services</a>
-              <a href="">React Native Development Services</a>
-            </div>
-            <div class="info_4 card">
-              <p>VERIFIED BY:</p>
-              <div class="container_info_4">
-                <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_meteor_2.png" alt=""></a>
-              <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_apollo_2.png" alt=""></a>
-              <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_upwork_2.png" alt=""></a>
-              <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_web_developers.png" alt=""></a>
-              </div>
-            </div>
+      <!-- Footer section starts -->
+  <footer >
+    <div class="footer__info">
+      <div class="logo-img">
+        <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/dsv-logo.png" alt="">
+      </div>
+
+      <div class="info-card">
+        <div class="info_1 card">
+          <a href="">About us</a>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">Project estimation</a>
+        </div>
+        <div class="info_2 card">
+          <a href="">Projects</a>
+          <a href="">How We Work</a>
+          <a href="">Contact us</a>
+          <a href="">FAQs</a>
+        </div>
+        <div class="info_3 card">
+          <a href="">Software Development Services</a>
+          <a href="">Web Development Services</a>
+          <a href="">Mobile App Development Services</a>
+          <a href="">Web Application Development Services</a>
+          <a href="">React Native Development Services</a>
+        </div>
+        <div class="info_4 card">
+          <p>VERIFIED BY:</p>
+          <div class="container_info_4">
+            <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_meteor_2.png" alt=""></a>
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_apollo_2.png" alt=""></a>
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_upwork_2.png" alt=""></a>
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_web_developers.png" alt=""></a>
           </div>
         </div>
-    
-        <div class="footer__contact">
-          <div class="icons">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-behance"></i>
-            <i class="fa-brands fa-dribbble"></i>
-          </div>
-          <p>© 2023 - Designveloper</p>
+      </div>
+    </div>
+
+    <div class="footer__contact">
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-behance"></i>
+        <i class="fa-brands fa-dribbble"></i>
+      </div>
+      <div class="info_4 card">
+        <p>VERIFIED BY:</p>
+        <div class="container_info_4">
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_meteor_2.png" alt=""></a>
+        <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_apollo_2.png" alt=""></a>
+        <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_upwork_2.png" alt=""></a>
+        <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_web_developers.png" alt=""></a>
         </div>
-      </footer>
-      <!-- Footer section ends -->
+      </div>
+      <p>© 2023 - Designveloper</p>
+    </div>
+  </footer>
+  <!-- Footer section ends -->
+      <script src="bower_components/aos/dist/aos.js"></script> 
+      <script>
+        AOS.init();
+      </script>
+      <script>
+        // ----------------------header---------------------------
+    window.onscroll = () => {
+      if (window.scrollY > 0) {
+        document.querySelector(".header").classList.add("fixed");
+      } else {
+        document.querySelector(".header").classList.remove("fixed");
+      }
+    };
+    
+    // <i class="fa-solid fa-xmark-large"></i>
+    $(document).ready(function() {
+    
+      $('.fa-bars-staggered').click(function() {
+        $(this).toggleClass('fa-x');
+        $('.navbar').toggleClass('navbar-toggle')
+        $('.header').toggleClass('header-toggle')
+      })
+    
+    
+    })
+    
+    </script>
 </body>
 
 </html>
