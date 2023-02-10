@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Designveloper</title>
 
   <!-- swiper -->
   <link rel="stylesheet" href="../lib/swiper/swiper.css">
-    <!-- aos -->
-    <link rel="stylesheet" href="../lib/aos-master/dist/aos.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="../lib/aos-master/dist/aos.css">
+  <!-- jquery -->
 
   <!-- css -->
   <link rel="stylesheet" href="../css/designveloper.css">
+  <link rel="stylesheet" href="../css/designveloper_responsive.css">
 
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -22,10 +24,11 @@
 <body>
   <!-- Header section starts -->
   <header class="section header">
-    <nav>
-      <a class="logo-img" href="../html/designveloper.html">
-        <img src="../assets/images/designveloper/logo.png" alt="">
-      </a>
+    <a class="logo-img header-left" href="../html/designveloper.html">
+      <img src="../assets/images/designveloper/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
       <a href="../html/aboutus.html">About Us</a>
       <a href="../html/Services.html">Services</a>
       <a href="../html/Project.html">Projects</a>
@@ -33,15 +36,22 @@
       <a href="../html/blog.html">Blog</a>
       <a href="../html/contactus.html">Contact Us</a>
       <a href="../html/faqs.html">FAQs</a>
-      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
     </nav>
+
+    <div class="header-right">
+      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
+      <i class="fa-solid fa-bars-staggered menu"></i>
+    </div>
   </header>
   <!-- Header section ends -->
 
   <!-- home section starts -->
   <section class="home" id="home">
     <div class="home-left">
-      <h1 data-aos="fade-up" data-aos-duration="1200" >We are high qualified team of talented <span>designers</span> and <span>developers</span>.</h1>
+      <h1 data-aos="fade-up" data-aos-duration="1200" >
+        We are high qualified team of talented <span>designers</span> and <span>developers</span>.
+      </h1>
+      
       <div class="bounce">
         <a href="#about">
 
@@ -49,6 +59,7 @@
           <p>SCROLL DOWN</p>
         </a>
       </div>
+
     </div>
     <div class="home-right">
       <svg viewBox="0 0 609 652" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -72,11 +83,11 @@
     <div class="container">
       <div class="about-left">
         <img src="../assets/images/designveloper/aboutus.png" alt="">
-        <div class="cirle-direct cirle-direct-about ">
+        <a href="../html/aboutus.html" class="cirle-direct cirle-direct-about ">
           <div class="cirle-direct-inside">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
-        </div>
+        </a>
       </div>
       <div class="about-right">
         <h1 class="title">About us</h1>
@@ -110,11 +121,11 @@
       <p class="title">At Designveloper, customer satisfaction is always our priority. We provide best services with
         cutting edge technology. Our tech stack is constantly evolving - We embrace new technology and we’re always
         learning. If you’re interested in a particular technology - just ask, we’ve probably used it!</p>
-      <div class="cirle-direct cirle-direct-ourservices">
+      <a href="../html/Services.html" class="cirle-direct cirle-direct-ourservices">
         <div class="cirle-direct-inside">
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-      </div>
+      </a>
     </div>
     <div class="ourservices__card" data-aos="fade-up" data-aos-duration="2000" >
       <div class="card">
@@ -215,13 +226,11 @@
           
         </div>
         
-        <div class="cirle-direct" onClick = "linkAbout()">
+        <a href="../html/Project.html" class="cirle-direct cirle-direct-project" onClick = "linkAbout()">
           <div class="cirle-direct-inside" >
-            <i class="fa-solid fa-arrow-right">
-              
-            </i>
+            <i class="fa-solid fa-arrow-right"></i>
           </div>
-        </div>  
+        </a>  
     </div>
     <div class="project-right">
       <div class="swiper mySwiper container">
@@ -278,40 +287,6 @@
         <h5>Co-founder</h5>
         <p>- Joyn'it -</p>
       </div>
-<!-- 
-      <div class="card">
-        <div class="card-img"><img src="../assets/images/designveloper/man_2.jpg" alt=""></div>
-        <p>Working with DSV on our major project has been an incredible experience.</p>
-        <p>We are now a long-term client with a major team. They achieve to keep good developers and conduct our project
-          perfectly and rapidly. They know how to report and communicate with the client and other client teams.</p>
-        <p>Working with their design and developer team has helped us smoothing the communication and reduce the rework as they
-          make workshops together.</p>
-        <p>They are awesome! Give it a try!</p>
-
-        <i class="fa-solid fa-quote-left"></i>
-        <h1>Godefroy Split</h1>
-        <h5>Co-founder</h5>
-        <p>Joyn'it</p>
-      </div>
-
-      <div class="card">
-        <div class="card-img"><img src="../assets/images/designveloper/man_3.jpg" alt=""></div>
-        <p>I gave them simple ideas. They analysis my requirements and design `screen flow`; themselves very well. If you wonder what you think, call them 🙂</p>
-
-        <i class="fa-solid fa-quote-left"></i>
-        <h1>Juik Kim</h1>
-        <h5>NoxBiX</h5>
-        <p>Novel Writer</p>
-      </div>
-
-      <div class="card">
-        <div class="card-img"><img src="../assets/images/designveloper/man_1.jpeg" alt=""></div>
-       <p>I've been working with Designveloper for nearly 2 years until now. Friendly team, fast development, quality programmers. Highly recommend them</p>
-        <i class="fa-solid fa-quote-left"></i>
-        <h1>JJoe Bono</h1>
-        <h5>Founder of Switchboard</h5>
-        <p>Switchboard</p>
-      </div> -->
 
     </div>
   </div>
@@ -419,6 +394,8 @@
   </footer>
   <!-- Footer section ends -->
 
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <!-- swiper -->
   <script src="../lib/swiper/swiper.js"></script>
   <!-- aos -->

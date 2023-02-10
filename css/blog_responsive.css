@@ -1,0 +1,29 @@
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 991px){
+    #cards-list #card:nth-child(3),
+    #cards-list #card:nth-child(4){
+        display: none;
+    }
+    #cards-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #home .blog__card .card{
+        /* width: 60rem; */
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600) {
+
+}

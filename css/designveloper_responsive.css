@@ -1,0 +1,241 @@
+:root {
+    --yellow-color: #faba0a;
+    --orange-color: #ff6900;
+    --black-color: #000000;
+    --gray-color: #abb8c3;
+    --white-color: #ffffff;
+    --border-radius: 0 0 16px;
+    --btn-hover: #fcce46;
+  
+    --background-color: #373e44;
+    --grey-color: #3f4549;
+    /* --background-color: #212529; */
+  }
+
+/* media queries */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 62%;
+    }
+/* header section starts */
+    header nav {
+        position: fixed;
+        top: -110%;
+        left: 4rem;
+       height: 100vh;
+       width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--yellow-color);
+        z-index: 1005;
+        padding: 3rem;
+    }
+    .header.fixed {
+        opacity: 1;
+    }
+    header nav a{
+        font-size: 3.5rem;
+        font-weight: 600; 
+        padding: 0;
+        margin: 0;
+        padding: 2rem 0;
+    }
+    header nav a:hover{
+        background-color: transparent;
+    }
+    .menu {
+        opacity: 1;
+        margin-left: 4rem;
+        z-index: 3000;
+    }
+    .fa-x {
+        transform: rotate(360deg);
+    }
+    .navbar-toggle {
+        top: 8rem;
+        margin-top: -20rem;
+    }
+    .header.header-toggle .btn-estimate{
+        display: none;
+    }
+    .header.header-toggle .logo-img {
+        opacity: 0;
+    }
+    .header.header-toggle{
+        background-color: var(--yellow-color) !important;
+    }
+/* header section ends */
+
+    section, .section {
+        padding: 2rem 7%;
+    }
+
+
+    #about .cirle-direct-about {
+        position: absolute;
+        top: 35rem;
+        left: 30rem;
+    }
+
+    .about-right {
+        margin-bottom: -6.8rem;
+    }
+
+    #ourservices {
+        padding-top: 17rem;
+
+    }
+    .ourservices__info p.title {
+        margin-left: -3.6rem;
+        max-width: 55rem;
+        margin-right: -4rem;
+    }
+    .project-left .cirle-direct {
+        position: absolute;
+        top: 30rem;
+        left: 22rem;
+    }
+    .project-right {
+        margin-left: 3rem;
+        width: 45%;
+        height: 36rem;
+    }
+    #news .news__info h1.title{
+        max-width: 2rem;
+    }
+    #news .news__info p.title{
+        max-width: 50rem;
+        margin-right: -4rem;
+    }
+    .info_2 {
+        padding-right: 13rem;
+    }
+    .info_1 a{
+        max-width: 9rem;
+        padding-right: 13rem;
+    }
+    .info_3 {
+        padding-right: 6rem;
+    }
+    
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 60%;
+    }
+    .section, section {
+        padding: 2rem 20%;
+    }
+
+/* home section */
+    #home {
+        position: relative;
+    }
+    .home-left {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    .home-left h1 {
+        width: 120%;
+    }
+    .home-right {
+        width: 100%;
+      } 
+
+/* home section ends*/
+    #about .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about .about-left{
+        max-width: 58rem;
+    }
+    #about .about-right{
+        max-width: 68rem;
+        padding: 0;
+        margin: 5rem 0;
+    }
+    #about .cirle-direct-about {
+        position: absolute;
+        top: 33rem;
+        left: 43rem;
+    }
+
+    #ourservices {
+        padding: 0 23%;
+    }
+    .ourservices__card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0rem;
+    }
+
+    .ourservices__card .card {
+        margin-top: -3rem;
+    }
+    .cirle-direct-ourservices {
+        margin-left: 150%;
+        margin-top: -40%;
+    }
+    #ourservices .ourservices__info {
+        width: 50%;
+        flex-direction: column;
+        padding-bottom: 10rem;
+    }
+    .ourservices__info p.title,
+    .ourservices__info h1.title {
+        width: 150%;
+    }
+    .ourservices__info h1.title{
+        padding-bottom: 1rem;
+        margin-left: -4rem;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        top: 400px;
+    }
+
+    .news__card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #project {
+        flex-direction: column;
+        width: 180%;
+    }
+    .project-left {
+        padding-bottom: 17rem;
+    }
+    .project-right{
+        margin-left: -1rem;
+        height: 47rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 55%;
+    }
+
+
+    .swiper-pagination {
+        position: absolute;
+        top: 470px;
+    }
+    
+}
+@media (max-width: 600) {
+    html{
+        font-size: 50%;
+    }
+    
+}

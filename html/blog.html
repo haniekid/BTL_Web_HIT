@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Blog</title>
 
   <!-- slick -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <!-- flickity -->
   <!-- <link rel="stylesheet" href="../lib/flickity/flickity.css"> -->
@@ -23,6 +25,7 @@
 
   <!-- css -->
   <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/blog_responsive.css">
 </head>
 
 <body>
@@ -51,7 +54,7 @@
         <h1 data-aos="fade-left" data-aos-delay="100">Blog</h1>
 
         <!-- home - slider - flickity starts -->
-        <div class="blog__card main-carousel" data-aos="fade-left" data-aos-delay="500" data-flickity='{ "wrapAround": true, }'>
+        <div class="blog__card main-carousel " data-aos="fade-left" data-aos-delay="500" data-flickity='{ "wrapAround": true, }'>
 
           <div class="card carousel-cell">
             <div class="card-left">
@@ -156,7 +159,7 @@
       <h1>Website Development</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/website_1.png" alt=""></div>
         <div class="info">
@@ -195,7 +198,7 @@
       <h1>Web Application Development</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/webapp_1.png" alt=""></div>
         <div class="info">
@@ -234,7 +237,7 @@
       <h1>Techlife</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/techlife_1.png" alt=""></div>
         <div class="info">
@@ -273,7 +276,7 @@
       <h1>Software Project Management</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/project_1.png" alt=""></div>
         <div class="info">
@@ -312,7 +315,7 @@
       <h1>Software Development</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/software_1.png" alt=""></div>
         <div class="info">
@@ -351,7 +354,7 @@
       <h1>Mobile App Development</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/mobileapp_1.png" alt=""></div>
         <div class="info">
@@ -390,7 +393,7 @@
       <h1>eCommerce Development</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/ecommerce_1.png" alt=""></div>
         <div class="info">
@@ -429,7 +432,7 @@
       <h1>DSV Universe</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/dvs_1.png" alt=""></div>
         <div class="info">
@@ -468,7 +471,7 @@
       <h1>Design World</h1>
       <p>VIEW ALL</p>
     </section>
-    <div id="cards-list">
+    <div id="cards-list" class="cards-list">
       <div id="card">
         <div class="img"><img src="../assets/images/blog/design_1.png" alt=""></div>
         <div class="info">
@@ -647,15 +650,20 @@
   <!-- <script src="../lib/flickity/flickity.js"></script> -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- slick -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="../lib/slick/slick.js"></script>
+  <script src="../lib/slick/slick.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- swiper -->
   <script src="../lib/swiper/swiper.js"></script>
   <!-- aos -->
   <script src="../lib/aos-master/dist/aos.js"></script>
+  
+  
   <!-- script -->
   <script src="../script/blog.js"></script>
 </body>

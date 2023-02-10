@@ -49,7 +49,6 @@ function handelCount() {
 
 document.onscroll = handelCount
 
-// ----------------------cirle-direct---------------------------
 
 // ----------------------header---------------------------
 window.onscroll = () => {
@@ -59,6 +58,25 @@ window.onscroll = () => {
     document.querySelector(".header").classList.remove("fixed");
   }
 };
+
+// <i class="fa-solid fa-xmark-large"></i>
+$(document).ready(function() {
+
+  $('.fa-bars-staggered').click(function() {
+    $(this).toggleClass('fa-x');
+    $('.navbar').toggleClass('navbar-toggle')
+    $('.header').toggleClass('header-toggle')
+  })
+
+
+})
+
+// let btnMenu = document.querySelector('.menu');
+
+// btnMenu.addEventListener('click', function(){
+//   btnMenu.classList.add('fa-xmark-large');
+//   btnMenu.classList.remove('fa-bars-staggered');
+// })
 
 
 // project section
@@ -87,4 +105,4 @@ var linkAbout = () => {
 // })
 
 
-//c
+//

@@ -12,6 +12,34 @@ window.onscroll = () => {
 
 // ---------------------slider-------------------------
 
+// $(document).ready(function() {
+//   $(".cards-list").slick({
+  
+//     slidesToShow: 2,
+//     slidesToScroll: 1,
+//     draggable: true,
+  
+  
+//     // infinite: false,
+  
+//     // responsive: [
+//     //   {
+//     //     breakpoint: 991,
+//     //     settings: {
+//     //       slidesToShow: 2,
+//     //       slidesToScroll: 1,
+//     //     }
+  
+//     //   }, 
+//     //   {
+//     //     breakpoint: 300,
+//     //     settings: "unslick" // destroys slick
+  
+//     //   }]
+//   });
+// })
+
+		
 
 
 
