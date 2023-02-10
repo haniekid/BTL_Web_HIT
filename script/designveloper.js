@@ -59,7 +59,6 @@ window.onscroll = () => {
   }
 };
 
-// <i class="fa-solid fa-xmark-large"></i>
 $(document).ready(function() {
 
   $('.fa-bars-staggered').click(function() {

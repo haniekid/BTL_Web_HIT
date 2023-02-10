@@ -689,7 +689,7 @@ header .logo-img img {
 
 /* ---------------footer section starts--------------- */
 
-.footer__info{
+.footer__info {
   background-color: #2d3237;
   height: 35rem;
   padding-left: 9%;
@@ -712,7 +712,7 @@ header .logo-img img {
   padding-top: 3rem;
 }
 
-.info-card .card a{
+.info-card .card a {
   display: block;
   color: white;
   font-size: 1.6rem;
@@ -741,20 +741,13 @@ header .logo-img img {
   font-size: 1.6rem;
 }
 
-.info_4-contact{
+.container_info_4 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 7rem;
-  width: 6rem;
-  margin-top: -4rem;
+  grid-template-columns: 50% 50%;
 }
 
-.info_4-contact a {
-  margin: -0.5rem;
-}
-
-.info_4-contact a img {
-  height: 3rem;
+.container_info_4 a img {
+  height: 25px;
 }
 
 .footer__contact {
@@ -763,6 +756,10 @@ header .logo-img img {
   padding: 0rem 9%;
   display: flex;
   justify-content: space-between;
+}
+
+.footer__contact .info_4 {
+  display: none;
 }
 
 .footer__contact .icons i {
@@ -782,4 +779,5 @@ header .logo-img img {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 /* footer section ends */

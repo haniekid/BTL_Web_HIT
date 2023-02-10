@@ -1,5 +1,6 @@
 /* ---------------basic css starts--------------- */
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -70,22 +71,27 @@ section,
 }
 
 @keyframes bounce {
+
   20%,
   50%,
   80%,
   to {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   70% {
     transform: translateY(-15px);
   }
+
   90% {
     transform: translateY(-4px);
   }
 }
+
 h1.title {
   color: var(--yellow-color);
   font-size: 3.2rem;
@@ -98,6 +104,7 @@ p.title {
   text-align: start;
   line-height: 2.3rem;
 }
+
 .cirle-direct {
   width: 11rem;
   height: 11rem;
@@ -136,17 +143,22 @@ p.title {
   0% {
     transform: translateX(-1rem);
   }
+
   50% {
     transform: translateX(1rem);
   }
+
   99% {
     transform: translateX(-1rem);
   }
+
   100% {
     transform: translateX(0.8rem);
   }
 }
+
 /* partials css ends */
+
 
 /* ---------------header section starts--------------- */
 header {
@@ -164,48 +176,53 @@ header {
 }
 
 header nav {
-  width: 100%;
+  width: 66%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -4rem;
+  /* padding-left: 5rem; */
 }
 
 header .logo-img {
   cursor: pointer;
 }
 
-header nav a {
+header a {
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   color: var(--white-color);
 }
 
-header nav a:hover {
+header a:hover {
   background-color: var(--btn-hover);
 }
 
-header nav a:first-child:hover {
+header .logo-img:hover {
   background-color: transparent;
 }
 
 
-header nav a.btn-estimate {
+header a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
   border-radius: var(--border-radius);
+  width: 15rem;
 }
 
-header nav a.btn-estimate:hover {
+header a.btn-estimate:hover {
   background-color: var(--btn-hover);
 }
 
-header .logo-img {
-  margin-right: 3rem;
-}
 
 header .logo-img img {
   width: 18rem;
   object-fit: cover;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
 .header.fixed {
@@ -215,7 +232,17 @@ header .logo-img img {
   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.1);
 }
 
+.menu {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
 /* header section ends */
+
+
 
 /* ---------------home section starts -----------*/
 #home {
@@ -264,27 +291,31 @@ header .logo-img img {
 #home .image .bounce {
   position: absolute;
   top: 72rem;
-  right:  18rem;
+  right: 18rem;
 }
+
 /* home section ends */
 
 /* ----------------info section starts------------------ */
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: var(--background-color);
 }
-.wrapper{
+
+.wrapper {
   padding-top: 8rem;
   width: 80%;
   display: flex;
 }
-.info-text{
+
+.info-text {
   width: 50%;
   display: flex;
   align-items: center;
 }
+
 .info-text h1 {
   padding-top: 3rem;
   margin-bottom: 1.8rem;
@@ -293,13 +324,16 @@ header .logo-img img {
 .info-text p {
   line-height: 2.5rem;
 }
-.left_wrapper{
+
+.left_wrapper {
   width: 80%;
 }
-.info-image{
+
+.info-image {
   width: 50%;
 }
-.info-image img{
+
+.info-image img {
   max-width: 95%;
   object-fit: cover;
 }
@@ -312,11 +346,13 @@ header .logo-img img {
   justify-content: center;
   align-items: center;
 }
+
 #ourvision i {
   color: #666;
   font-size: 9rem;
   padding-top: 3.5rem;
 }
+
 #ourvision p {
   max-width: 57rem;
   font-size: 4.7rem;
@@ -327,10 +363,12 @@ header .logo-img img {
   padding-bottom: 7rem;
   /* text-align: justify; */
 }
+
 #ourvision p span {
   font-weight: 300;
   color: var(--yellow-color);
 }
+
 /* Our vision section ends  */
 
 /* -------------team section starts-------------- */
@@ -343,6 +381,7 @@ header .logo-img img {
   height: 100%;
   object-fit: cover;
 }
+
 /* team section ends */
 
 /* -------------Meet section starts------------- */
@@ -352,19 +391,23 @@ header .logo-img img {
   padding-top: 7rem;
   padding-bottom: 10rem;
 }
+
 #meet .meet-left p {
   min-width: 78%;
   font-size: 3.2rem;
   color: white;
   font-weight: 700;
 }
+
 .meet-left p span {
   color: white;
 }
+
 .meet-left .yellow-color {
   color: var(--yellow-color) !important;
   line-height: 3rem;
 }
+
 .meet-left p:nth-child(3) {
   line-height: 1.5rem;
 }
@@ -379,10 +422,12 @@ header .logo-img img {
   width: 40%;
   margin-right: 5.5rem;
 }
+
 .ourclient-left h1.title {
   padding-top: 8rem;
   margin-bottom: 1.8rem;
 }
+
 .ourclient-right {
   width: 50%;
   display: grid;
@@ -396,6 +441,7 @@ header .logo-img img {
   height: 100%;
   object-fit: cover;
 }
+
 /* --------------Our Partner section starts---------------  */
 #ourpartner {
   display: flex;
@@ -431,7 +477,7 @@ header .logo-img img {
 .ourpartner-left .card:hover .hidden-img {
   display: block;
   transition: all 0.3s ease-in-out;
-  
+
 }
 
 .ourpartner-left .card:hover .initial-img {
@@ -443,6 +489,7 @@ header .logo-img img {
 .ourpartner-right h1.title {
   padding-bottom: 1.8rem;
 }
+
 /* Our Partner section ends  */
 /* ---------------------our client section starts--------------------- */
 
@@ -459,11 +506,11 @@ header .logo-img img {
   width: 50%;
 }
 
-#man .card__man  .card{
+#man .card__man .card {
   margin-bottom: 8rem;
 }
 
-#man .card__man  .card-img {
+#man .card__man .card-img {
   border-radius: 50%;
   overflow: hidden;
   width: 15rem;
@@ -474,12 +521,13 @@ header .logo-img img {
   margin: 20rem auto 0 auto;
 }
 
-#man .card__man  .card-img  img {
+#man .card__man .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#man .card__man  .card p{
+
+#man .card__man .card p {
   line-height: 2rem;
   font-size: 1.7rem;
   font-weight: 400;
@@ -487,33 +535,33 @@ header .logo-img img {
   text-align: center;
 }
 
-#man .card__man  .card h1,
-#man .card__man  .card h5,
-#man .card__man  .card i{
+#man .card__man .card h1,
+#man .card__man .card h5,
+#man .card__man .card i {
   text-align: center;
 }
 
-#man .card__man  .card i {
+#man .card__man .card i {
   font-size: 3rem;
-  color:#6b7782;
+  color: #6b7782;
   display: block;
   padding: 2rem 0 1.5rem 0;
 }
 
-#man .card__man  .card h1 {
+#man .card__man .card h1 {
   color: var(--yellow-color);
   font-weight: 500;
 }
 
-#man .card__man  .card h5{
+#man .card__man .card h5 {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 300;
   padding-top: 0.9rem;
 }
-#man .card__man  .card .card-img {
 
-}
+#man .card__man .card .card-img {}
+
 /* man section ends */
 
 /* our client section starts */
@@ -524,7 +572,8 @@ header .logo-img img {
   padding-bottom: 18rem;
   padding-top: 8rem;
 }
-.conclusion  .main {
+
+.conclusion .main {
   display: flex;
   justify-content: space-between;
   background-color: var(--yellow-color);
@@ -550,12 +599,13 @@ header .logo-img img {
 .conclusion span {
   color: #fff;
 }
+
 /* conclusion section ends */
 
 
 /* ---------------footer section starts--------------- */
 
-.footer__info{
+.footer__info {
   background-color: #2d3237;
   height: 35rem;
   padding-left: 9%;
@@ -567,15 +617,18 @@ header .logo-img img {
   cursor: pointer;
   width: 18rem;
 }
+
 .footer__info .logo-img img {
   width: 100%;
   height: 100%;
 }
+
 .info-card {
   display: flex;
   padding-top: 3rem;
 }
-.info-card .card a{
+
+.info-card .card a {
   display: block;
   color: white;
   font-size: 1.6rem;
@@ -585,6 +638,7 @@ header .logo-img img {
 .info-card .card a:hover {
   color: var(--yellow-color);
 }
+
 .info_1 {
   padding-right: 5rem;
 }
@@ -592,6 +646,7 @@ header .logo-img img {
 .info_2 {
   padding-right: 17rem;
 }
+
 .info_3 {
   padding-right: 12rem;
 }
@@ -601,11 +656,13 @@ header .logo-img img {
   font-weight: 300;
   font-size: 1.6rem;
 }
-.container_info_4{
+
+.container_info_4 {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.container_info_4 a img{
+
+.container_info_4 a img {
   height: 25px;
 }
 
@@ -616,7 +673,8 @@ header .logo-img img {
   display: flex;
   justify-content: space-between;
 }
-.footer__contact .info_4{
+
+.footer__contact .info_4 {
   display: none;
 }
 
@@ -637,8 +695,5 @@ header .logo-img img {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 /* footer section ends */
-
-
-
-

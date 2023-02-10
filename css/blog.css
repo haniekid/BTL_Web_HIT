@@ -48,6 +48,7 @@ section,
 /* -------------partials css starts------------ */
 /* partials css ends */
 
+
 /* ---------------header section starts--------------- */
 header {
   position: fixed;
@@ -64,48 +65,53 @@ header {
 }
 
 header nav {
-  width: 100%;
+  width: 66%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -4rem;
+  /* padding-left: 5rem; */
 }
 
 header .logo-img {
   cursor: pointer;
 }
 
-header nav a {
+header a {
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   color: var(--white-color);
 }
 
-header nav a:hover {
+header a:hover {
   background-color: var(--btn-hover);
 }
 
-header nav a:first-child:hover {
+header .logo-img:hover {
   background-color: transparent;
 }
 
 
-header nav a.btn-estimate {
+header a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
   border-radius: var(--border-radius);
+  width: 15rem;
 }
 
-header nav a.btn-estimate:hover {
+header a.btn-estimate:hover {
   background-color: var(--btn-hover);
 }
 
-header .logo-img {
-  margin-right: 3rem;
-}
 
 header .logo-img img {
   width: 18rem;
   object-fit: cover;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
 .header.fixed {
@@ -114,6 +120,14 @@ header .logo-img img {
   padding-bottom: 2rem;
   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.1);
 }
+
+.menu{
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
 
 /* header section ends */
 
@@ -373,7 +387,7 @@ header .logo-img img {
 
 /* ---------------footer section starts--------------- */
 
-.footer__info{
+.footer__info {
   background-color: #2d3237;
   height: 35rem;
   padding-left: 9%;
@@ -396,7 +410,7 @@ header .logo-img img {
   padding-top: 3rem;
 }
 
-.info-card .card a{
+.info-card .card a {
   display: block;
   color: white;
   font-size: 1.6rem;
@@ -425,20 +439,13 @@ header .logo-img img {
   font-size: 1.6rem;
 }
 
-.info_4-contact{
+.container_info_4 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 7rem;
-  width: 6rem;
-  /* margin-top: -4rem; */
+  grid-template-columns: 50% 50%;
 }
 
-.info_4-contact a {
-  margin: -0.5rem;
-}
-
-.info_4-contact a img {
-  height: 3rem;
+.container_info_4 a img {
+  height: 25px;
 }
 
 .footer__contact {
@@ -447,6 +454,10 @@ header .logo-img img {
   padding: 0rem 9%;
   display: flex;
   justify-content: space-between;
+}
+
+.footer__contact .info_4 {
+  display: none;
 }
 
 .footer__contact .icons i {
@@ -466,4 +477,5 @@ header .logo-img img {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 /* footer section ends */

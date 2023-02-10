@@ -8,13 +8,9 @@
   <title>Blog</title>
 
   <!-- slick -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-  <!-- flickity -->
-  <!-- <link rel="stylesheet" href="../lib/flickity/flickity.css"> -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- swiper -->
   <link rel="stylesheet" href="../lib/swiper/swiper.css" />
   <!-- aos -->
@@ -31,10 +27,11 @@
 <body>
   <!-- Header section starts -->
   <header class="section header">
-    <nav>
-      <a class="logo-img" href="../html/designveloper.html">
-        <img src="../assets/images/designveloper/logo.png" alt="">
-      </a>
+    <a class="logo-img header-left" href="../html/designveloper.html">
+      <img src="../assets/images/designveloper/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
       <a href="../html/aboutus.html">About Us</a>
       <a href="../html/Services.html">Services</a>
       <a href="../html/Project.html">Projects</a>
@@ -42,8 +39,12 @@
       <a href="../html/blog.html">Blog</a>
       <a href="../html/contactus.html">Contact Us</a>
       <a href="../html/faqs.html">FAQs</a>
-      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
     </nav>
+
+    <div class="header-right">
+      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
+      <i class="fa-solid fa-bars-staggered menu"></i>
+    </div>
   </header>
   <!-- Header section ends -->
 
@@ -54,7 +55,8 @@
         <h1 data-aos="fade-left" data-aos-delay="100">Blog</h1>
 
         <!-- home - slider - flickity starts -->
-        <div class="blog__card main-carousel " data-aos="fade-left" data-aos-delay="500" data-flickity='{ "wrapAround": true, }'>
+        <div class="blog__card main-carousel " data-aos="fade-left" data-aos-delay="500"
+          data-flickity='{ "wrapAround": true, }'>
 
           <div class="card carousel-cell">
             <div class="card-left">
@@ -96,9 +98,9 @@
               <a href="#" class="read-more">Read More</a>
             </div>
           </div>
-        </div> -->
+        </div> 
         <!-- home - slider ends -->
-    
+
 
 
         <!-- home - slider - slick starts -->
@@ -582,13 +584,13 @@
   </div>
   <!-- card Best Companies section ends -->
 
-  <!-- Footer section starts -->
-  <footer>
+   <!-- Footer section starts -->
+   <footer>
     <div class="footer__info">
       <div class="logo-img">
-          <img src="../assets/images/designveloper/logo.png" alt="">
-        </div>
-      
+        <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/dsv-logo.png" alt="">
+      </div>
+
       <div class="info-card">
         <div class="info_1 card">
           <a href="">About us</a>
@@ -596,14 +598,12 @@
           <a href="">Blog</a>
           <a href="">Project estimation</a>
         </div>
-
         <div class="info_2 card">
           <a href="">Projects</a>
           <a href="">How We Work</a>
           <a href="">Contact us</a>
           <a href="">FAQs</a>
         </div>
-
         <div class="info_3 card">
           <a href="">Software Development Services</a>
           <a href="">Web Development Services</a>
@@ -611,49 +611,53 @@
           <a href="">Web Application Development Services</a>
           <a href="">React Native Development Services</a>
         </div>
-
         <div class="info_4 card">
           <p>VERIFIED BY:</p>
-          <div class="info_4-contact">
-            <a href="#"><img src="../assets/images/designveloper/footer_1.png" alt=""></a>
-            <a href="#"><img src="../assets/images/designveloper/footer_2.png" alt=""></a>
-            <a href="#"><img src="../assets/images/designveloper/footer_3.png" alt=""></a>
-            <a href="#"><img src="../assets/images/designveloper/footer_4.png" alt=""></a>
+          <div class="container_info_4">
+            <a href=""><img
+                src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_meteor_2.png"
+                alt=""></a>
+            <a href=""><img
+                src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_apollo_2.png"
+                alt=""></a>
+            <a href=""><img
+                src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_upwork_2.png"
+                alt=""></a>
+            <a href=""><img
+                src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_web_developers.png"
+                alt=""></a>
           </div>
         </div>
-        
       </div>
     </div>
 
     <div class="footer__contact">
       <div class="icons">
         <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-square-twitter"></i> 
+        <i class="fa-brands fa-square-twitter"></i>
         <i class="fa-brands fa-linkedin-in"></i>
         <i class="fa-brands fa-behance"></i>
         <i class="fa-brands fa-dribbble"></i>
+      </div>
+      <div class="info_4 card">
+        <p>VERIFIED BY:</p>
+        <div class="container_info_4">
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_meteor_2.png"
+              alt=""></a>
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_apollo_2.png"
+              alt=""></a>
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_upwork_2.png"
+              alt=""></a>
+          <a href=""><img
+              src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_web_developers.png"
+              alt=""></a>
+        </div>
       </div>
       <p>© 2023 - Designveloper</p>
     </div>
   </footer>
   <!-- Footer section ends -->
 
-
-  <!-- man -->
-  <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-  <script src="js/jquery/.hislide.js"></script>
-  <script>
-    $('.slide').hiSlide();
-  </script> -->
-
-  <!-- flickity -->
-  <!-- <script src="../lib/flickity/flickity.js"></script> -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <!-- slick -->
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="../lib/slick/slick.js"></script> -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -662,8 +666,10 @@
   <script src="../lib/swiper/swiper.js"></script>
   <!-- aos -->
   <script src="../lib/aos-master/dist/aos.js"></script>
-  
-  
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
   <!-- script -->
   <script src="../script/blog.js"></script>
 </body>

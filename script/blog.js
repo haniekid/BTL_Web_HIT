@@ -9,6 +9,17 @@ window.onscroll = () => {
   }
 };
 
+$(document).ready(function() {
+
+  $('.fa-bars-staggered').click(function() {
+    $(this).toggleClass('fa-x');
+    $('.navbar').toggleClass('navbar-toggle')
+    $('.header').toggleClass('header-toggle')
+  })
+
+
+})
+
 
 // ---------------------slider-------------------------
 
