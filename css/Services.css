@@ -399,6 +399,75 @@ button:hover{
     object-fit: contain;
     height: 250px;
 }
+/* ---------------man section starts--------------- */
+#man {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+  }
+  
+  #man .card__man {
+    width: 50%;
+  }
+  
+  #man .card__man  .card{
+    margin-bottom: 8rem;
+  }
+  
+  #man .card__man  .card-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: block;
+    margin: 20rem auto 0 auto;
+  }
+  
+  #man .card__man  .card-img  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #man .card__man  .card p{
+    line-height: 2rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  #man .card__man  .card h1,
+  #man .card__man  .card h5,
+  #man .card__man  .card i{
+    text-align: center;
+  }
+  
+  #man .card__man  .card i {
+    font-size: 3rem;
+    color:#6b7782;
+    display: block;
+    padding: 2rem 0 1.5rem 0;
+  }
+  
+  #man .card__man  .card h1 {
+    color: var(--yellow-color);
+    font-weight: 500;
+  }
+  
+  #man .card__man  .card h5{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-top: 0.9rem;
+  }
+  #man .card__man  .card .card-img {
+  
+  }
+  /* man section ends */
 .container6{
      font-weight: 550;
     background-image:url("https://www.designveloper.com/wp-content/themes/designveloper/images/badge_bg.png");
