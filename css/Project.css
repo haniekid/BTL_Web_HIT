@@ -49,65 +49,82 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 1000;
   font-weight: 500;
-  /* opacity: 0.95; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 8rem;
   width: 100vw;
-  background-color: #abb8c3;
+  background-color: transparent !important;
 }
 
 header nav {
-  width: 100%;
+  width: 66%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -4rem;
+  /* padding-left: 5rem; */
 }
 
 header .logo-img {
   cursor: pointer;
 }
 
-header nav a {
+header a {
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   color: var(--white-color);
-  /* color: #ffffff; */
 }
 
-header nav a:hover {
+header a:hover {
   background-color: var(--btn-hover);
 }
 
-header nav a:first-child:hover {
+header .logo-img:hover {
   background-color: transparent;
 }
 
-header nav a.btn-estimate {
+
+header a.btn-estimate {
   padding: 1.7rem;
   background-color: var(--yellow-color);
   border-radius: var(--border-radius);
+  width: 15rem;
 }
 
-header nav a.btn-estimate:hover {
+header a.btn-estimate:hover {
   background-color: var(--btn-hover);
 }
 
-header .logo-img {
-  margin-right: 3rem;
-}
 
 header .logo-img img {
   width: 18rem;
   object-fit: cover;
 }
 
-/* header section ends */
+.header-right {
+  display: flex;
+  align-items: center;
+}
 
+.header.fixed {
+  background-color: var(--background-color) !important;
+  opacity: 0.95;
+  padding-bottom: 2rem;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menu{
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+/* header section ends */
 body{
     margin: 0;
     padding: 0;
@@ -166,20 +183,6 @@ a{
     display: flex;
     justify-content: center;
 }
-.scroll::before{
-    font-family: FontAwesome;
-    content: "\f063";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #FCBF10;
-    margin-right: 5px;
-    color: #31383E;
-    padding: 5px;
-}
 .scroll{
     font-size: 15px;
     font-weight: 400;
@@ -189,12 +192,63 @@ a{
     justify-content: flex-end;
     align-items: center;
 }
+.wrapper2{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.bounce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14.5rem;
+  animation: bounce infinite 2s linear;
+  cursor: pointer;
+}
+
+.bounce p,
+.bounce i {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #faba0a;
+  font-weight: 400;
+}
+
+.bounce i {
+  color: var(--yellow-color);
+  font-size: 2.5rem;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
 .list{
     width: 100%;
-    padding-bottom: 100px;
-    display: grid;
-    grid-template-columns: 22% 22% 22% 22%;
-    grid-gap: 30px;
+    display: flex;
+  justify-content: center;
+   
+}
+.list_wrapper{
+  width: 100%;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-gap: 30px;
 }
 .item{
     padding: 70px 0;
@@ -284,6 +338,7 @@ a{
 }
 .right img{
     height: 65%;
+    max-width: 150%;
 }
 .button{
     display: flex;
@@ -418,8 +473,11 @@ button:hover{
     padding-left: 9%;
     padding-right: 9%;
     padding-top: 6rem;
+    font-weight: 400;
   }
-  
+  .footer__contact .info_4{
+    display: none;
+   }
   .footer__info .logo-img {
     cursor: pointer;
     width: 18rem;
@@ -484,7 +542,6 @@ button:hover{
   .footer__contact .icons i:hover {
     color: var(--yellow-color);
   }
-  
   .footer__contact p {
     padding-top: 3rem;
     color: white;
@@ -492,3 +549,140 @@ button:hover{
     font-weight: 500;
   }
   /* footer section ends */
+  @media (max-width: 991px) {
+     /* header section starts */
+     header nav {
+      position: fixed;
+      top: -110%;
+      left: 4rem;
+     height: 100vh;
+     width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--yellow-color);
+      z-index: 1005;
+      padding: 3rem;
+  }
+  .header.fixed {
+      opacity: 1;
+  }
+  header nav a{
+      font-size: 3.5rem;
+      font-weight: 600; 
+      padding: 0;
+      margin: 0;
+      padding: 2rem 0;
+  }
+  header nav a:hover{
+      background-color: transparent;
+  }
+  .menu {
+      opacity: 1;
+      margin-left: 4rem;
+      z-index: 3000;
+  }
+  .fa-x {
+      transform: rotate(360deg);
+  }
+  .navbar-toggle {
+      top: 8rem;
+      margin-top: -20rem;
+  }
+  .header.header-toggle .btn-estimate{
+      display: none;
+  }
+  .header.header-toggle .logo-img {
+      opacity: 0;
+  }
+  .header.header-toggle{
+      background-color: var(--yellow-color) !important;
+  }
+/* header section ends */
+    .scroll{
+      opacity: 0;
+    }
+    .list_wrapper{
+      grid-template-columns: 49% 49%;
+
+    }
+    .item2{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .left,.right{
+      width: 80%;
+    }
+    .left_wrapper{
+      width: 100%;
+      padding: 20px 0;
+    }
+    .right img{
+      width: 100%;
+    }
+
+    .chan{
+      flex-direction: column;
+    }
+    .footer__info{
+      height: auto;
+      }
+  .card{
+      padding: 0;
+  }
+  
+
+    
+ }
+ @media (max-width: 768px) {
+    .wrapper1{
+      width: 99%;
+    }
+    .list_wrapper{
+      width: 80%;
+      grid-template-columns: 80%;
+    }
+    .wrapper::after{
+      bottom: 200px;
+    }
+     /* footer */
+   .info_2,.info_4{
+    display: none;
+   }
+   .info-card{
+    justify-content: space-between;
+   }
+   .footer__contact .icons{
+    display: none;
+   }
+   .footer__contact{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+   }
+   .footer__contact .info_4{
+    display: none;
+   }
+   .info_3 a{
+    width: 90%;
+   }
+   .footer__contact p:last-child{
+    text-align: center;
+   }
+   .footer__contact .info_4{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .container_info_4{
+    display: flex;
+   }
+   .container_info_4 a{
+    padding: 10px 20px;
+   }
+  
+  /* footer_end */
+ }

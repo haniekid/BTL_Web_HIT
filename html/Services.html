@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/aos-master/dist/aos.css" />
     <link rel="stylesheet" href="../css/Services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,44 +19,52 @@
 </head>
 
 <body>
-    <header class="section header">
-        <nav>
-          <a class="logo-img" href="../html/designveloper.html">
-            <img src="../assets/images/designveloper/logo.png" alt="">
-          </a>
-          <a href="../html/aboutus.html">About Us</a>
-          <a href="../html/Services.html">Services</a>
-          <a href="../html/Project.html">Projects</a>
-          <a href="../html/Careers.html">Careers</a>
-          <a href="../html/blog.html">Blog</a>
-          <a href="../html/contactus.html">Contact Us</a>
-          <a href="../html/faqs.html">FAQs</a>
-          <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
-        </nav>
-      </header>
-      <!-- Header section ends -->
-    <div class="container1">
+    <!-- Header section starts -->
+  <header class="section header">
+    <a class="logo-img header-left" href="../html/designveloper.html">
+      <img src="../assets/images/designveloper/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+      <a href="../html/aboutus.html">About Us</a>
+      <a href="../html/Services.html">Services</a>
+      <a href="../html/Project.html">Projects</a>
+      <a href="../html/Careers.html">Careers</a>
+      <a href="../html/blog.html">Blog</a>
+      <a href="../html/contactus.html">Contact Us</a>
+      <a href="../html/faqs.html">FAQs</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="../html/estimateproject.html" class="btn-estimate">Estimate Project</a>
+      <i class="fa-solid fa-bars-staggered menu"></i>
+    </div>
+  </header>
+  <!-- Header section ends -->
+    <div class="container1" id="container1_id">
         <div class="wrapper1">
-            <div class="c1">Software Development</div>
-            <div class="c2">Services</div>
-            <div class="c3">Designveloper’s team of skilled and driven software developers will create long-term value
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="c1">Software Development</div>
+            <div  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="c2 ">Services</div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="c3">Designveloper’s team of skilled and driven software developers will create long-term value
                 with our excellent software development services. By using deep technical knowledge and
                 industry-spanning experience, we facilitate strong, full-cycle support from the first market research
                 and business analysis to the idea, production, and release.</div>
-            <button>Let's Talk!</button>
+            <button data-aos="fade-right" data-aos-duration="1000">Let's Talk!</button>
         </div>
     </div>
-    <div class="container2">
+    <div class="container2" >
         <div class="wrapper2">
-            <div class="scroll"><i class="fa-solid fa-arrow-down"></i></div>
-            <div class="scroll_text">SCROLL DOWN</div>
+            <a href="#container3_id" class="bounce">
+                <i class="fa-sharp fa-solid fa-circle-down"></i>
+                <p>SCROLL DOWN</p>
+            </a>
         </div>
     </div>
-    <div class="container3">
+    <div class="container3" id="container3_id">
         <div class="wrapper3">
             <div class="container3_header">Our stellar software development services</div>
             <div class="wrapper_child">
-                <div class="cot bac">
+                <div data-aos="fade-up" data-aos-duration="1000" class="cot bac">
                     <div class="i"><img class="ict3"
                             src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/web-application-development.png"
                             alt=""></div>
@@ -65,7 +74,7 @@
                         up the growth of your user base, get access to new digital channels, improve your conversion
                         rate, and reach other business goals faster.</div>
                 </div>
-                <div class="cot bac">
+                <div data-aos="fade-up" data-aos-duration="1000" class="cot bac">
                     <div class="i"><img class="ict3"
                             src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/mobile-application-development.png"
                             alt=""></div>
@@ -74,7 +83,7 @@
                         feature-rich native mobile apps for consumers and enterprises. We'll oversee mobile app
                         development from inception to delivery and maintenance.</div>
                 </div>
-                <div class="cot bac">
+                <div data-aos="fade-up" data-aos-duration="1000" class="cot bac">
                     <div class="i"><img class="ict3"
                             src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/ui-ux-design.png"
                             alt=""></div>
@@ -84,24 +93,24 @@
                         strategies and real, human-centered brand identities that have a direct impact on today's
                         digital landscape.</div>
                 </div>
-                <div class="cot bac">
+                <div data-aos="fade-up" data-aos-duration="1000" class="cot bac">
                     <div class="i"><img class="ict3"
                             src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/business-management-solutions.png"
                             alt=""></div>
                     <div class="h">Business Management Solutions</div>
                     <div class="p">With Designveloper's business management solutions, you will be able to work smarter
                         and bring about impeccable efficiency. Our services include CRM, tasks, document, project and
-                        time management, business process automation, team collaboration, corporate directory, HRMS,
-                        just to name a few.</div>
+                        </div>
                 </div>
             </div>
         </div>
 
     </div>
     <div class="container4">
-        <div class="left4"> <img class="ict4"
+        <div  class="wrapper4">
+            <div class="left4"> <img class="ict4"
                 src="https://www.designveloper.com/wp-content/themes/designveloper/images/img_aboutus.png" alt=""></div>
-        <div class="right4">
+        <div  class="right4">
             <div class="right4_h">Why choose Designveloper?</div>
             <div class="right4_p">Designveloper is here to assist you in accomplishing all of your digital objectives,
                 enhancing your workflows and business preparedness. With our one-of-a-kind, scalable, and secure
@@ -130,11 +139,12 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     </div>
     <div class="container5">
         <div class="wrapper5">
-            <ul class="container5_left">
+            <ul data-aos="fade-right" data-aos-duration="1000" class="container5_left">
                 <div class="left5_header">Our Software Development Highlights</div>
                 <li class="p5">Our project managers have extensive expertise with large, complicated projects involving
                     dispersed teams and various vendors.</li>
@@ -151,13 +161,13 @@
                     to help firms maintain their relevance in their respective, competitive industry.</li>
             </ul>
     
-            <div class="container5_right"><img
+            <div data-aos="fade-left" data-aos-duration="1000" class="container5_right"><img
                     src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/highlights.png"
                     alt="" class="i5"></div>
         </div>
         
     </div>
-    <div class="container6">
+    <div  class="container6">
         <div class="container6_h">Partnerships & Recognitions</div>
         <div class="container6_p">Using the deep domain knowledge of our software developers, we can work together to
             make digital solutions that have a strategic vision and drive meaningful change. We put a lot of value on
@@ -178,7 +188,7 @@
     <div class="container8">
         <div class="container8_h">Essential principles of our software development process</div>
         <div class="wrapper8">
-            <div class="container8_left">
+            <div  data-aos="fade-right" data-aos-duration="1000" class="container8_left">
                 <div class="left8_h">We love project management triangle at Designveloper</div>
                 <div class="left8_p">According to the project management triangle model, which represents the limitations
                     during the project management process, you can only optimize 2 of the 3 determinants: Fast, Good, and
@@ -188,23 +198,27 @@
                     development services ensure that you receive the highest quality services at lightning speed without
                     having to worry about the price.</div>
             </div>
-            <div class="container8_right">
+            <div data-aos="fade-left" data-aos-duration="1000"  class="container8_right">
                 <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/essential-principles.png"
                     alt="" class="i8">
             </div>
         </div>
     </div>
     <div class="container9">
+       <div data-aos="fade-up" data-aos-duration="1000" class="wrapper9">
+        <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/process_mobile_new.png" alt="">
         <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/executing-project.png"
-            alt="" class="h9">
-        <div class="p9">Our clear steps of executing a project, after you signed a contract with us</div>
-        <div class="f9">In addition to offering comprehensive software development services tailored to your industry
-            and budgetary needs, Designveloper adheres to a specific plan of action to ensure the success of the
-            project.</div>
+        alt="" class="h9">
+    <div class="p9">Our clear steps of executing a project, after you signed a contract with us</div>
+    <div class="f9">In addition to offering comprehensive software development services tailored to your industry
+        and budgetary needs, Designveloper adheres to a specific plan of action to ensure the success of the
+        project.</div>
+       </div>
     </div>
     <div class="container10">
-        <div class="H10">When you contact us, we offer 2 consult packages:</div>
-        <table>
+        <div data-aos="fade-left" data-aos-duration="1000"  class="wrapper10_father">
+            <div class="H10">When you contact us, we offer 2 consult packages:</div>
+        <table data-aos="fade-left" data-aos-duration="1000"   >
             <tr class="ct10_h1">
                 <td class="abc">
                     <div class="wrapper10">
@@ -242,6 +256,7 @@
             </tr>
         </table>
         <button>Estimate Your Project</button>
+        </div>
     </div>
     <div class="container11">
         <div class="h11">
@@ -252,7 +267,7 @@
         </div>
         <div class="wrapper11">
             <div class="h11_left">
-                <div class="wrapper11_left">
+                <div  class="wrapper11_left">
                     <div class="h11_left_h">Agile methodology is usually used at our company for project management</div>
                     <div class="h11_left_p">
                         <div class="h11_left_p_p">
@@ -277,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h11_right">
+            <div   class="h11_right">
                 <div class="h11_right_h">Management tools</div>
                 <div class="tab">
                     <div class="nav_tab">
@@ -367,7 +382,7 @@
     <div class="container12">
        <div class="wrapper11">
         <div class="h11_left">
-            <div class="wrapper11_left">
+            <div class="wrapper11_left" >
                 <div class="h11_left_h h12_left_h">We love state-of-the-art technologies</div>
                 <div class="h11_left_p h12_left_p">
                     We are a skilled team of designers and developers with extensive industry knowledge who can provide technology solutions and instant value. We have in our arsenal a comprehensive selection of modern technology trends and software development services to help you navigate the future of technology.
@@ -375,7 +390,7 @@
                 <button>Realize Your Ideals</button>
             </div>
         </div>
-        <div class="h11_right">
+        <div class="h11_right" >
             <div class="h11_right_h">Management tools</div>
             <div class="tab">
                 <div class="nav_tab1">
@@ -462,7 +477,7 @@
     </div>
     <div class="container13">
         <div class="wrapper13">
-            <div class="w13_l">
+            <div  class="w13_l">
                 <div class="l13_h">
                     Industries that Designveloper take part in
                 </div>
@@ -470,7 +485,7 @@
                     We work with businesses of varying sizes and operating in a wide variety of sectors to develop inspiring and influential software products. Our customers are completely satisfied with the results of our partnership and efforts on their behalf.
                 </div>
             </div>
-            <ul class="w13_r">
+            <ul class="w13_r"  >
                 <li class="r13">
                     <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/services/Tools.png" alt="" class="i13">
                     <div class="p13">Manufacturing</div>
@@ -505,7 +520,7 @@
                 Related case studies
             </div>
             <div class="contain13_1">
-                <div class="item13_1">
+                <div  class="item13_1" id="item13_1_1" >
                     <div class="item13_1_container">
                         <div class="h1">Lumin</div>
                         <div class="h2">PRODUCTIVITY TOOL</div>
@@ -516,7 +531,7 @@
                          <div class="h4">View detail</div>
                     </div>
                 </div>
-                <div class="item13_1">
+                <div  class="item13_1" id="item13_1_2">
                     <div class="item13_1_container">
                         <div class="h1">ODC</div>
                         <div class="h2">SOCIAL NETWORK</div>
@@ -527,7 +542,7 @@
                          <div class="h4">View detail</div>
                     </div>
                 </div>
-                <div class="item13_1">
+                <div   class="item13_1" id="item13_1_3">
                     <div class="item13_1_container">
                         <div class="h1">Swell & Switchboard </div>
                         <div class="h2">EDUCATIONL</div>
@@ -541,7 +556,7 @@
             </div>
         </div>
     </div>
-    <div class="container14">
+    <div  class="container14">
         <div class="wrapper14">
             <div class="w14_h">Let’s talk about your project</div>
             <div class="w14_h2">
@@ -615,12 +630,13 @@
             </div>
             <div class="img_i14"><img src="/assets/images/z4081941645899_bfc4eb9633a39623c2ec3b5542920c27.jpg" alt=""></div>
             <div class="button14"> <button >Submit</button></div>
-            <div class="wrapperback"><div class="backto">BACK TO TOP</div></div>
+            <div class="wrapperback"><a href="#container1_id" class="backto">BACK TO TOP</a></div>
+            
             
         </div>
     </div>
-    <!-- Footer section starts -->
-  <footer>
+      <!-- Footer section starts -->
+  <footer >
     <div class="footer__info">
       <div class="logo-img">
         <img src="https://www.designveloper.com/wp-content/themes/designveloper/images/dsv-logo.png" alt="">
@@ -666,13 +682,23 @@
         <i class="fa-brands fa-behance"></i>
         <i class="fa-brands fa-dribbble"></i>
       </div>
+      <div class="info_4 card">
+        <p>VERIFIED BY:</p>
+        <div class="container_info_4">
+          <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_meteor_2.png" alt=""></a>
+        <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_apollo_2.png" alt=""></a>
+        <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_upwork_2.png" alt=""></a>
+        <a href=""><img src="https://www.designveloper.com/wp-content/themes/designveloper/images/badge_web_developers.png" alt=""></a>
+        </div>
+      </div>
       <p>© 2023 - Designveloper</p>
     </div>
   </footer>
   <!-- Footer section ends -->
-</body>
-<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="../lib/aos-master/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <script>
+    AOS.init();
     $(document).ready(function () {
         
         $('.nav_content li').hide();
@@ -696,15 +722,39 @@
             return false;
         });
         $('.item1_3').click(function () {
-            if ($(this).hasClass('.item1_3  .item1_3_active')) {
-                $(this).removeClass('.item1_3_active');
+            if ($(this).hasClass('item1_3_active')) {
+                $(this).removeClass('item1_3_active');
             } else {
                 $(this).addClass('item1_3_active');
             }
-           
+           return false;
            
         });
     });
 </script>
+<script>
+    // ----------------------header---------------------------
+window.onscroll = () => {
+  if (window.scrollY > 0) {
+    document.querySelector(".header").classList.add("fixed");
+  } else {
+    document.querySelector(".header").classList.remove("fixed");
+  }
+};
+
+// <i class="fa-solid fa-xmark-large"></i>
+$(document).ready(function() {
+
+  $('.fa-bars-staggered').click(function() {
+    $(this).toggleClass('fa-x');
+    $('.navbar').toggleClass('navbar-toggle')
+    $('.header').toggleClass('header-toggle')
+  })
+
+
+})
+
+</script>
+</body>
 
 </html>
